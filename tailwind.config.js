@@ -4,16 +4,30 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       keyframes: {
-          "fade-in-y": {
-            "0%": { opacity: 0, transform: "translateY(25px)" },
-            "100%": { opacity: 1, transform: "translateY(0px)" },
+          "fade-in": {
+            "0%": { 
+              opacity: '0%',
+            },
+            "100%": { 
+              opacity: '100%' 
+            },
+            },
+            "slide-down":{
+              "0%": {
+                margin: "-5rem",
+              },
+              "100%":{
+                margin: "0rem"
+              }
             },
         },
         animation: {
-          "fade-in-y": "fade-in-y 1s linear",
+          "fade-in": "fade-in 1s",
+          "slide-down":"slide-down 1s",
         },
     },
   },
