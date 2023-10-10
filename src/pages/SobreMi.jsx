@@ -8,7 +8,7 @@ export default function SobreMi() {
 			<h1 className={`text-4xl text-center my-4 font-semibold text-[#485caa]   dark:bg-zinc-900`}>Sobre Mí</h1>
 			<div className={` animate-fade-in transition-all duration-300 flex items-center w-[60rem] m-auto border-t-2 max-md:flex-col max-lg:w-auto  gap-x-4 dark:bg-zinc-900`}>
 				<div className={`flex flex-col   dark:bg-zinc-900 dark:text-zinc-100`}>
-					<h1 className={`text-[#213547] text-4xl text-left my-4 font-semibold max-md:text-center   dark:bg-zinc-900`}>¿Quién soy?</h1>
+					<h1 className={`text-[#213547] text-4xl text-left my-4 font-semibold max-md:text-center dark:text-zinc-100  dark:bg-zinc-900`}>¿Quién soy?</h1>
 					<p className={`text-[#213547] text-justify space-x-6 text-xl font-[400] max-md:my-4    dark:bg-zinc-900 dark:text-zinc-100`}>
 						Soy estudiante de 'Análisis en Sistemas' y programador autodidacta. Mi pasión por la tecnología me impulsa a buscar oportunidades laborales en el campo de las tecnologías para continuar mi desarrollo profesional y aprender de manera continua. Estoy emocionado por formar parte del mundo laboral y aprovechar cada experiencia para adquirir nuevos conocimientos y habilidades en el ámbito de las tecnologías.
 					</p>

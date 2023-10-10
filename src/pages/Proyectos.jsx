@@ -5,6 +5,13 @@ export default function Proyectos() {
 
 	const proyectos = [
 		{
+			nombre: 'Thinder Pet',
+			descripcion: '"Es una aplicación diseñada para ayudar a los dueños de mascotas a encontrar una compañía adecuada para sus adorables amigos peludos. Este proyecto fue desarrollado como proyecto en No Country, y para su creación se utilizaron tecnologías de vanguardia como Tailwind CSS, ReactJS y TypeScript.',
+			imagen: 'thinderpet.png',
+			pagina: 'https://thinderpet.vercel.app/',
+			repositorio: 'https://github.com/No-Country/c13-36-t-node-react'
+		},
+		{
 			nombre: 'CALCULADORA',
 			descripcion: 'Una calculadora interactiva que realiza operaciones matemáticas básicas. Desarrollada en HTML, CSS, SaSS y JavaScript.',
 			imagen: 'calculator.jpg',
@@ -52,7 +59,7 @@ export default function Proyectos() {
     <>
 			<main className={` border-black w-auto h-auto p-4 dark:bg-zinc-900`}>
 				<h1 className={`text-center mb-4 text-4xl font-semibold dark:bg-zinc-900 text-[#485caa] dark:border-zinc-500`}>Proyectos</h1>
-				<div className={`grid grid-rows-3 border-t-2 grid-flow-col gap-4 w-[50rem] m-auto max-lg:grid-rows-6 max-lg:w-auto dark:bg-zinc-900 animate-fade-in`}>
+				<div className={`grid grid-rows-4 border-t-2 grid-flow-col gap-4 w-[50rem] m-auto max-lg:grid-rows-6 max-lg:w-auto dark:bg-zinc-900 animate-fade-in`}>
 					{proyectos.map(({nombre, descripcion, imagen, pagina, repositorio})=>(
 						<React.Fragment key={nombre}>
 							<ProyectosProps key={nombre} nombre={nombre} descripcion={descripcion} imagen={imagen} pagina={pagina} repositorio={repositorio}></ProyectosProps>
