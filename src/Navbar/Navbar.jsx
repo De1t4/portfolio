@@ -70,10 +70,10 @@ export default function Navbar() {
 				</div>
 				{open
 				? <div className='z-50 hidden bg-zinc-100  max-md:flex cursor-pointer hover:scale-110 duration-300 transition-all' onClick={handleNavbar}>
-				<FaWindowClose className={`text-2xl bg-zinc-100 dark:text-zinc-100 dark:bg-zinc-800`}></FaWindowClose>
+				<FaWindowClose className={`text-2xl text-[#213547] bg-zinc-100 dark:text-zinc-100 dark:bg-zinc-800`}></FaWindowClose>
 				</div>
 				:<div className='hidden max-md:flex bg-zinc-100 cursor-pointer hover:scale-110 duration-300 transition-all' onClick={handleNavbar}>
-				<FaBars className={`text-2xl bg-zinc-100 dark:text-zinc-100 dark:bg-zinc-800`}></FaBars>
+				<FaBars className={`text-2xl text-[#213547] bg-zinc-100 dark:text-zinc-100 dark:bg-zinc-800`}></FaBars>
 				</div>
 				}
 			</nav>

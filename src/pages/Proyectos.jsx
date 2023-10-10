@@ -51,7 +51,7 @@ export default function Proyectos() {
   return (
     <>
 			<main className={` border-black w-auto h-auto p-4 dark:bg-zinc-900`}>
-				<h1 className={`text-center mb-4 text-4xl font-semibold dark:bg-zinc-900 dark:text-[#485caa] dark:border-zinc-500`}>Proyectos</h1>
+				<h1 className={`text-center mb-4 text-4xl font-semibold dark:bg-zinc-900 text-[#485caa] dark:border-zinc-500`}>Proyectos</h1>
 				<div className={`grid grid-rows-3 border-t-2 grid-flow-col gap-4 w-[50rem] m-auto max-lg:grid-rows-6 max-lg:w-auto dark:bg-zinc-900 animate-fade-in`}>
 					{proyectos.map(({nombre, descripcion, imagen, pagina, repositorio})=>(
 						<React.Fragment key={nombre}>
