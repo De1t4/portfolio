@@ -16,7 +16,7 @@ export default function SobreMi() {
 				<img src={'image.jpg'} alt="" className={`w-[30rem] h-[20rem]   dark:bg-zinc-900`}/>
 			</div>
 			<div className={`w-[60rem] flex items-center m-auto my-20 gap-8 max-md:flex-col-reverse max-lg:w-auto   dark:bg-zinc-900`}>
-				<div className={`w-[20rem] grid grid-rows-2 grid-flow-col gap-4 border-4 p-4 border-black   dark:bg-zinc-900`}>
+				<div className={`w-[20rem] grid grid-rows-2 grid-flow-col gap-4 border-4 p-4 border-[#485caa]   dark:bg-zinc-900`}>
 					{fotos.map((foto, index)=>(
 						<div key={index} className=' animate-fade-in transition-all duration-300'>
 							<img src={foto} alt="" className='cursor-pointer hover:scale-110 transition-all duration-300' />

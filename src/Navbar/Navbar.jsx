@@ -53,10 +53,10 @@ export default function Navbar() {
   }, []);
   return (
     <>
-			<nav className={` z-50 flex justify-between bg-zinc-100 items-center border-b-2 py-6 px-8  dark:border-zinc-600 dark:bg-zinc-800 duration-300 transition-all animate-slide-down`} >
+			<nav className={` h-30 z-50 flex justify-between bg-zinc-100 items-center border-b-2 py-6 px-8  dark:border-zinc-600 dark:bg-zinc-800 duration-300 transition-all animate-slide-down`} >
 				<NavLink to={'/'}>
 					<div className={`flex items-center gap-4 dark:bg-zinc-800 bg-zinc-100`}>
-							<h1 className={`z-50 font-bold bg-zinc-100 text-2xl font-sans text-[#485caa] dark:bg-zinc-800 dark:text-[#fff]`}>Mauricio Chambi</h1>
+							<img src={'LogoPage.png'} alt="logo-page"  className='w-12 object-cover rounded-lg brightness-125 z-40'/>
 							<p className={`font-normal italic text-[#213547] bg-zinc-100 max-lg:hidden dark:bg-zinc-800 dark:text-[#fff]`}>Estudiante de Analisis de Sistemas</p>
 					</div>
 				</NavLink>

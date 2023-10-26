@@ -6,7 +6,7 @@ export default function Proyectos() {
 	const proyectos = [
 		{
 			nombre: 'Thinder Pet',
-			descripcion: '"Es una aplicación diseñada para ayudar a los dueños de mascotas a encontrar una compañía adecuada para sus adorables amigos peludos. Este proyecto fue desarrollado como proyecto en No Country, y para su creación se utilizaron tecnologías de vanguardia como Tailwind CSS, ReactJS y TypeScript.',
+			descripcion: 'Es una aplicación diseñada para ayudar a los dueños de mascotas a encontrar una compañía adecuada para sus adorables amigos peludos. Este proyecto fue desarrollado como proyecto en No Country, y para su creación se utilizaron tecnologías de vanguardia como Tailwind CSS, ReactJS y TypeScript.',
 			imagen: 'thinderpet.png',
 			pagina: 'https://thinderpet.vercel.app/',
 			repositorio: 'https://github.com/No-Country/c13-36-t-node-react'
