@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <DarkModeProvider>
     <BrowserRouter>
       <React.StrictMode>
-      <App />
+      <App className=" transition-all duration-300"/>
     </React.StrictMode>
     </BrowserRouter>
   </DarkModeProvider>

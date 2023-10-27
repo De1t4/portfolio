@@ -19,10 +19,7 @@ const technologies = [
         nombre: 'Tailwind',
         image: 'tailwind.png',
     },
-    {
-        nombre: 'TypeScript',
-        image: 'type.png',
-    },
+
     {
         nombre: 'React',
         image: 'react.png',
@@ -47,6 +44,10 @@ const technologies = [
         nombre: 'Vite',
         image: 'vite.jpg',
     },
+		{
+			nombre: 'TypeScript',
+			image: 'type.png',
+	},
     ];
       
   return (
@@ -57,7 +58,7 @@ const technologies = [
 					<p className={`my-2 text-[#213547] dark:bg-zinc-900 dark:text-zinc-100`}>Estas son las tecnologías con las que trabajo para llevar a cabo mis proyectos.</p>
 					<div className={` grid grid-rows-4 grid-flow-col gap-4 max-md:grid-rows-6 my-8 dark:bg-zinc-900`}>
 					{technologies.map(({nombre, image})=>(
-							<div key={nombre} className={`flex text-zinc-900 hover:scale-105 transition-all duration-300 justify-between items-center border-2 p-4 rounded-lg w-[15rem] cursor-pointer hover:filter hover:brightness-90	max-md:w-full `}>
+							<div key={nombre} className={` flex flex-col-reverse text-zinc-900 hover:scale-105 transition-all duration-300 justify-between items-center border-2 p-4 rounded-lg w-[15rem] cursor-pointer hover:filter hover:brightness-90	max-md:w-full  `}>
 								<p className='text-[#213547]'>{nombre}</p>
 								<div className='w-10 h-10'>
 									<img src={image} alt="tecnologias-utilizadas" />
