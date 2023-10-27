@@ -1,0 +1,15 @@
+{
+  "title": "Projects",
+  "project1": "THINDER PET",
+  "text1": "It is an application designed to help pet owners find a suitable companion for their adorable furry friends. This project was developed as part of No Country, and cutting-edge technologies such as Tailwind CSS, ReactJS, and TypeScript were used for its creation.",
+  "project2": "CALCULATOR",
+  "text2": "An interactive calculator that performs basic mathematical operations. Developed in HTML, CSS, SaSS, and JavaScript.",
+  "project3": "REST COUNTRIES API",
+  "text3": "A web application that uses the REST Countries API, where users can explore data from different countries. Developed with technologies such as React Js, HTML, CSS, and REST API.",
+  "project4": "CODO A CODO PROJECT",
+  "text4": "Project from the Codo a Codo Java FullStack course. During my participation in the Codo a Codo Java FullStack course, I developed a project using a combination of key technologies including HTML, CSS, Bootstrap, and JavaScript.",
+  "project5": "LANDING PAGE",
+  "text5": "Landing Page I created from the Front End Mentor page where I used technologies such as HTML, CSS, SaSS, and JavaScript.",
+  "project6": "DICTIONARY API",
+  "text6": "I created a dictionary web page using React and a dictionary API. Users can search for words and get their meanings."
+  }

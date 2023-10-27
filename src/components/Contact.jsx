@@ -2,11 +2,13 @@
 // For more help visit https://formspr.ee/react-help
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import { useTranslation } from 'react-i18next';
 export function ContactForm() {
+  const { t } = useTranslation("home");
   const [state, handleSubmit] = useForm("xdorbbgp");
   if (state.succeeded) {
-      return <><p className='text-center text-green-500 font-semibold dark:bg-zinc-900'>Tu mensaje fue enviado correctamente</p>
-      <form onSubmit={handleSubmit} className=' flex flex-col pb-8 gap-y-2 dark:bg-zinc-900'>
+      return <><p className=' text-center text-green-500 font-semibold dark:bg-zinc-900'>Tu mensaje fue enviado correctamente</p>
+      <form onSubmit={handleSubmit} className='px-20 max-md:px-0 flex flex-col py-8 gap-y-2 dark:bg-zinc-900'>
         <label htmlFor="email" className='text-[#213547] font-semibold dark:bg-zinc-900 dark:text-[#485caa]'>
           Email
         </label>
@@ -15,7 +17,7 @@ export function ContactForm() {
           type="email" 
           name="email"
           required
-          placeholder='ejemplo@gmail.com'
+          placeholder={t("ejemplo")}
           className='border-2 rounded-lg dark:border-zinc-500 p-2 dark:bg-[#222] dark:text-[#fff] text-[#213547]'
         />
         <ValidationError 
@@ -24,7 +26,7 @@ export function ContactForm() {
           errors={state.errors}
         />
         <label htmlFor="email" className='text-[#213547] font-semibold dark:bg-zinc-900 dark:text-[#485caa]'>
-          Nombre
+          {t("name")}
         </label>
         <input
           id="name"
@@ -40,7 +42,7 @@ export function ContactForm() {
           errors={state.errors}
         />
         <label htmlFor="email" className='text-[#213547] font-semibold dark:bg-zinc-900 dark:text-[#485caa] '>
-          Tu mensaje
+          {t("message")}
         </label>
         <textarea
           id="message"
@@ -56,13 +58,13 @@ export function ContactForm() {
           errors={state.errors}
         />
       <button type="submit" disabled={state.submitting} className='hover:scale-105 transition-all duration-300 my-2 w-[20rem] m-auto border-2 bg-[#485caa] text-[#fff] font-semibold'>
-        Enviar Mensaje
+        {t("btnText")}
       </button>
     </form>
       </>
   }
   return (
-      <form onSubmit={handleSubmit} className=' flex flex-col py-8 gap-y-2 dark:bg-zinc-900'>
+      <form onSubmit={handleSubmit} className='px-20 max-md:px-0 flex flex-col py-8 gap-y-2 dark:bg-zinc-900'>
         <label htmlFor="email" className='text-[#213547] font-semibold dark:bg-zinc-900 dark:text-[#485caa]'>
           Email
         </label>
@@ -71,7 +73,7 @@ export function ContactForm() {
           type="email" 
           name="email"
           required
-          placeholder='ejemplo@gmail.com'
+          placeholder={t("ejemplo")}
           className='border-2 rounded-lg dark:border-zinc-500 p-2 dark:bg-[#222] dark:text-[#fff] text-[#213547]'
         />
         <ValidationError 
@@ -80,7 +82,7 @@ export function ContactForm() {
           errors={state.errors}
         />
         <label htmlFor="email" className='text-[#213547] font-semibold dark:bg-zinc-900 dark:text-[#485caa]'>
-          Nombre
+        {t("name")}
         </label>
         <input
           id="name"
@@ -96,7 +98,7 @@ export function ContactForm() {
           errors={state.errors}
         />
         <label htmlFor="email" className='text-[#213547] font-semibold dark:bg-zinc-900 dark:text-[#485caa] '>
-          Tu mensaje
+        {t("message")}
         </label>
         <textarea
           id="message"
@@ -104,7 +106,7 @@ export function ContactForm() {
           className='border-2  h-60 rounded-lg max-h-64 dark:border-zinc-500 p-2 dark:bg-[#222] dark:text-[#fff] text-[#213547]'
           maxLength={255}
           required
-          placeholder='Dejame tu mensaje....'
+          placeholder={t("textMessage")}
         />
         <ValidationError 
           prefix="Message" 
@@ -112,7 +114,7 @@ export function ContactForm() {
           errors={state.errors}
         />
       <button type="submit" disabled={state.submitting} className='hover:scale-105 transition-all duration-300 my-2 w-[20rem] m-auto border-2 bg-[#485caa] text-[#fff] font-semibold'>
-        Enviar Mensaje
+        {t("btnText")}
       </button>
     </form>
   );
