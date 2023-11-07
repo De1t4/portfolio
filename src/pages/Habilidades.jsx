@@ -46,9 +46,13 @@ const technologies = [
         nombre: 'Vite',
         image: 'vite.jpg',
     },
-		{
-			nombre: 'TypeScript',
-			image: 'type.png',
+	{
+        nombre: 'TypeScript',
+        image: 'type.png',
+	},
+    {
+        nombre: 'Next Js',
+        image: 'nextjs.svg',
 	},
     ];
       

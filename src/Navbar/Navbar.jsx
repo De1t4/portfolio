@@ -89,15 +89,15 @@ export default function Navbar() {
 				</div>
 				}
 			</nav>
-			<div className={`${open?'flex':'hidden'} z-30 rounded-b-xl  absolute bg-zinc-100 w-full top-0 h-[33rem] flex-col items-center justify-center dark:bg-zinc-800`}>
+			<div className={`${open?'flex':'hidden'}  z-30 rounded-b-xl  absolute bg-zinc-100 w-full top-0 h-[33rem] flex-col items-center justify-center dark:bg-zinc-800`}>
 				{links.map(({title, route})=>(
-							<div key={route} className='flex items-center'>
+							<div key={route} className='flex my-4 items-center'>
 								<NavLink to={route} className={`bg-zinc-100 dark:bg-zinc-800`}>
-									<p className={`border-zinc-300 my-4 text-[#213547] text-lg font-semibold hover:text-[#485caa] hover:brightness-90 transition-all duration-300 hover:scale-110 hover:cursor-pointer border-2 p-2 w-60 text-center rounded-lg dark:bg-zinc-700 dark:hover:brightness-125 dark:text-zinc-100 hover:dark:text-[#485caa] hover:dark:border-[#485caa] dark:border-zinc-500`}>{title}</p>
+									<p className={`border-zinc-300 text-[#213547] text-lg font-semibold hover:text-[#485caa] hover:brightness-90 transition-all duration-300 hover:scale-110 hover:cursor-pointer border-2 p-2 w-60 text-center rounded-lg dark:bg-zinc-700 dark:hover:brightness-125 dark:text-zinc-100 hover:dark:text-[#485caa] hover:dark:border-[#485caa] dark:border-zinc-500`}>{title}</p>
 								</NavLink>
 							</div>
 						))}
-					<p onClick={handleChangeTheme} className={`my-4 text-[#213547] text-lg font-semibold hover:text-[#485caa] hover:brightness-90 transition-all duration-300 hover:scale-110 hover:cursor-pointer border-2 p-2 w-60 text-center rounded-lg dark:bg-zinc-700 dark:hover:brightness-125 dark:border-zinc-500 hover:dark:text-[#485caa] hover:dark:border-[#485caa] dark:text-zinc-100`}>{t("theme")}</p>
+					<p onClick={handleChangeTheme} className={`flex justify-center items-center my-4 text-[#213547] text-lg font-semibold hover:text-[#485caa] hover:brightness-90 transition-all duration-300 hover:scale-110 hover:cursor-pointer border-2 p-2 w-60 text-center rounded-lg dark:bg-zinc-700 dark:hover:brightness-125 border-zinc-300 dark:border-zinc-500 hover:dark:text-[#485caa] hover:dark:border-[#485caa] dark:text-zinc-100`}>{theme == "dark" ?<FaMoon className='border-zinc-500 mr-1  dark:bg-zinc-700'></FaMoon> : <FaSun className='bg-zinc-100 mr-1 '></FaSun>}  {t("theme")}</p>
 					<select name="" id="" value={i18n.language} onChange={handleLanguageChange} className='border-zinc-300 my-4 text-[#213547] text-lg font-semibold hover:text-[#485caa] hover:brightness-90 transition-all duration-300 hover:cursor-pointer border-2 p-2 w-60 text-center rounded-lg dark:bg-zinc-700 dark:hover:brightness-125 dark:text-zinc-100 hover:dark:text-[#485caa] hover:dark:border-[#485caa] dark:border-zinc-500'>
 							<option value="es" className=' border-zinc-300 my-4 text-[#213547] text-lg font-semibold hover:text-[#485caa] hover:brightness-90 transition-all duration-300 hover:cursor-pointer border-2 p-2 w-60 text-center rounded-lg dark:bg-zinc-700 dark:hover:brightness-125 dark:text-zinc-100 hover:dark:text-[#485caa] hover:dark:border-[#485caa] dark:border-zinc-500'>{t("spanish")}</option>
 							<option value="en" className='border-zinc-300 my-4 text-[#213547] text-lg font-semibold hover:text-[#485caa] hover:brightness-90 transition-all duration-300 hover:cursor-pointer border-2 p-2 w-60 text-center rounded-lg dark:bg-zinc-700 dark:hover:brightness-125 dark:text-zinc-100 hover:dark:text-[#485caa] hover:dark:border-[#485caa] dark:border-zinc-500'>{t("english")}</option>

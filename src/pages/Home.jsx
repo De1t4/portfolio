@@ -3,12 +3,13 @@ import React from 'react'
 import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope } from 'react-icons/fa';
 import { ContactForm } from '../components/Contact';
 import { useTranslation } from 'react-i18next';
+import { Toaster, toast } from 'sonner';
 
 export default function Home() {
 	const { t } = useTranslation("home");
 	const copyMail = () =>{
 		copy('mauriciochambicaceres@gmail.com')
-		alert("Mail copiado")
+		toast.success('Email Copiado')
 	}
 
 	const links = [
@@ -30,6 +31,7 @@ export default function Home() {
 ];
   return (
     <>
+		<Toaster  richColors/>
 		<main className={`min-h-screen  dark:bg-zinc-900`}>
 				<section className={`flex w-[50rem] items-center m-auto flex-col max-lg:w-auto dark:bg-zinc-900 `}>
 					<div className={`flex items-center gap-x-10 border-b-2 p-8 max-lg:flex-col max-md:flex-col dark:bg-zinc-900 dark:border-zinc-500`}>
@@ -37,9 +39,9 @@ export default function Home() {
 							<h1 className={`text-4xl leading-[3rem] max-lg:text-center text-[#213547] dark:bg-zinc-900 dark:text-zinc-100`}>{t("title")}<span  className={`text-[#485caa] font-semibold cursor-pointer hover:brightness-110 dark:bg-zinc-900`}>{t("myname")}</span> {t("studies")}</h1>
 					</div>
 					<h1 className={`text-3xl  font-bold text-[#485caa] text-center py-4 dark:bg-zinc-900`}>{t("network")}</h1>
-					<div className={`flex justify-between w-[45rem] max-md:w-full mb-8 dark:bg-zinc-900 px-10 my-8`}>
-						<span className='flex flex-col items-center dark:bg-zinc-900 text-zinc-100'>
-							<FaEnvelope className={`text-4xl w-auto h-auto cursor-pointer hover:text-[#485caa] dark:hover:text-[#485caa]  transition-all duration-300 hover:scale-110 text-[#1a1a1a] dark:bg-zinc-900 dark:text-zinc-100`} onClick={copyMail}></FaEnvelope>
+					<div className={`flex justify-between w-[45rem] max-md:w-full mb-8 dark:bg-zinc-900 px-10`}>
+						<span className='flex flex-col items-center dark:bg-zinc-900 text-zinc-100' >
+							<FaEnvelope onClick={copyMail}  className={`text-4xl w-auto h-auto cursor-pointer hover:text-[#485caa] dark:hover:text-[#485caa]  transition-all duration-300 hover:scale-110 text-[#1a1a1a] dark:bg-zinc-900 dark:text-zinc-100`}></FaEnvelope>
 							<p className='dark:bg-zinc-900 text-[#213547] dark:text-zinc-100'>Email</p>
 						</span>
 						{links.map(({href, iconClass, text})=>(

@@ -3,11 +3,13 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { useTranslation } from 'react-i18next';
+import { Toaster, toast } from 'sonner';
 export function ContactForm() {
   const { t } = useTranslation("home");
   const [state, handleSubmit] = useForm("xdorbbgp");
   if (state.succeeded) {
-      return <><p className=' text-center text-green-500 font-semibold dark:bg-zinc-900'>Tu mensaje fue enviado correctamente</p>
+      return <> 
+      <p className=' text-center text-green-500 font-semibold dark:bg-zinc-900'>Tu mensaje fue enviado correctamente</p>
       <form onSubmit={handleSubmit} className='px-20 max-md:px-0 flex flex-col py-8 gap-y-2 dark:bg-zinc-900'>
         <label htmlFor="email" className='text-[#213547] font-semibold dark:bg-zinc-900 dark:text-[#485caa]'>
           Email
@@ -61,9 +63,10 @@ export function ContactForm() {
         {t("btnText")}
       </button>
     </form>
-      </>
+  </>
   }
-  return (
+  return (<>
+  		<Toaster  richColors/>
       <form onSubmit={handleSubmit} className='px-20 max-md:px-0 flex flex-col py-8 gap-y-2 dark:bg-zinc-900'>
         <label htmlFor="email" className='text-[#213547] font-semibold dark:bg-zinc-900 dark:text-[#485caa]'>
           Email
@@ -98,7 +101,7 @@ export function ContactForm() {
           errors={state.errors}
         />
         <label htmlFor="email" className='text-[#213547] font-semibold dark:bg-zinc-900 dark:text-[#485caa] '>
-        {t("message")}
+          {t("message")}
         </label>
         <textarea
           id="message"
@@ -113,10 +116,11 @@ export function ContactForm() {
           field="message"
           errors={state.errors}
         />
-      <button type="submit" disabled={state.submitting} className='hover:scale-105 transition-all duration-300 my-2 w-[20rem] m-auto border-2 bg-[#485caa] text-[#fff] font-semibold'>
+      <button type="submit" disabled={state.submitting} className='my-2 w-[20rem] m-auto border-2 bg-[#485caa] text-[#fff] font-semibold'>
         {t("btnText")}
       </button>
     </form>
+    </>
   );
 
 }
