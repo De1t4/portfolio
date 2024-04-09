@@ -7,7 +7,9 @@ import { Toaster, toast } from 'sonner';
 export function ContactForm() {
   const { t } = useTranslation("home");
   const [state, handleSubmit] = useForm("xdorbbgp");
-  if (state.succeeded) {
+  if (state.succeeded) 
+  {
+
       return <> 
       <p className=' text-center text-green-500 font-semibold dark:bg-zinc-900'>Tu mensaje fue enviado correctamente</p>
       <form onSubmit={handleSubmit} className='px-20 max-md:px-0 flex flex-col py-8 gap-y-2 dark:bg-zinc-900'>
@@ -67,7 +69,7 @@ export function ContactForm() {
   }
   return (<>
   		<Toaster  richColors/>
-      <form onSubmit={handleSubmit} className='px-20 max-md:px-0 flex flex-col py-8 gap-y-2 dark:bg-zinc-900'>
+      <form onSubmit={handleSubmit} className='px-20 max-md:px-0 flex flex-col py-2 gap-y-2 dark:bg-zinc-900'>
         <label htmlFor="email" className='text-[#213547] font-semibold dark:bg-zinc-900 dark:text-[#485caa]'>
           Email
         </label>

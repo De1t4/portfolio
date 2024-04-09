@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <React.StrictMode>
         <I18nextProvider i18n={i18n}>
-          <App className=" transition-all duration-300"/>
+          <App className=" transition-all duration-200 "/>
         </I18nextProvider>
     </React.StrictMode>
     </BrowserRouter>

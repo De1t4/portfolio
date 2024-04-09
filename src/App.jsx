@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Habilidades from './pages/Habilidades'
 import SobreMi from './pages/SobreMi'
 import Proyectos from './pages/Proyectos'
+import Contacto from './pages/Contacto'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/habilidades" element={<Habilidades></Habilidades>} ></Route>
         <Route path="/sobremi"element={<SobreMi></SobreMi>} ></Route>
         <Route path='/proyectos' element={<Proyectos></Proyectos>}></Route>
+        <Route path='/contacto' element={<Contacto></Contacto>}></Route>
         <Route path='/*' element={<Navigate to={'/'}/>}></Route>
       </Routes>
     </>

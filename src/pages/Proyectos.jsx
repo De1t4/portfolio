@@ -7,6 +7,27 @@ export default function Proyectos() {
 
 	const proyectos = [
 		{
+			nombre: t("project2"),
+			descripcion: t("text2"),
+			imagen: 'nearby.png',
+			pagina: 'https://nearbytour.vercel.app/home',
+			repositorio: 'https://github.com/No-Country/s11-21-react-next'
+		},
+		{
+			nombre: t("project5"),
+			descripcion: t("text5"),
+			imagen: 'drinkventry.png',
+			pagina: 'https://drinkventry.netlify.app/',
+			repositorio: 'https://github.com/No-Country/s12-23-tn-typescript-react/tree/developer'
+		},
+		{
+			nombre: t("project6"),
+			descripcion:  t("text6"),
+			imagen: 'blogapp.png',
+			pagina: '',
+			repositorio: '',
+		},
+		{
 			nombre: t("project1"),
 			descripcion: t("text1"),
 			imagen: 'thinderpet.png',
@@ -20,6 +41,7 @@ export default function Proyectos() {
 			pagina: 'https://countries-api-rest-react.netlify.app/',
 			repositorio: 'https://github.com/De1t4/countries-api-rest',
 		},
+
 		{
 			nombre: t("project4"),
 			descripcion: t("text4"),
@@ -27,42 +49,20 @@ export default function Proyectos() {
 			pagina: 'https://de1t4.github.io/Trabajo-practico-integrador-JS/',
 			repositorio: 'https://github.com/De1t4/Trabajo-practico-integrador-JS',
 		},
-		{
-			nombre: t("project5"),
-			descripcion: t("text5"),
-			imagen: 'desktop-preview.jpg',
-			pagina: 'https://de1t4.github.io/LoopLandingPage/',
-			repositorio: 'https://github.com/De1t4/LoopLandingPage',
-		},
-		{
-			nombre: t("project2"),
-			descripcion: t("text2"),
-			imagen: 'calculator.jpg',
-			pagina: 'https://de1t4.github.io/Calculator/',
-			repositorio: 'https://github.com/De1t4/Calculator',
-		},
-		{
-			nombre: t("project6"),
-			descripcion: t("text6"),
-			imagen: 'vccuroyji9nqbuffdch6.png',
-			pagina: 'https://api-diccionario.netlify.app/',
-			repositorio: 'https://github.com/De1t4/app-diccionario',
-		},
 	];
 
   return (
     <>
-		{/* COLOR: #D1D6EA */}
 			<main className={` border-black w-auto h-auto p-4 dark:bg-zinc-900`}>
 				<h1 className={`text-center mb-4 text-4xl font-semibold dark:bg-zinc-900 text-[#485caa] dark:border-zinc-500`}>{t("title")}</h1>
-				<div className={`grid grid-cols-2 gap-4 w-[50rem] m-auto max-md:grid-cols-1 max-md:w-full dark:bg-zinc-900 animate-fade-in `}>
+				<section className={` grid mb-4 grid-cols-2 gap-4 w-[50rem]  m-auto max-md:grid-cols-1 max-md:w-full dark:bg-zinc-900 animate-fade-in `}>
 					{proyectos.map(({nombre, descripcion, imagen, pagina, repositorio})=>(
 						<React.Fragment key={nombre}>
 							<ProyectosProps key={nombre} nombre={nombre} descripcion={descripcion} imagen={imagen} pagina={pagina} repositorio={repositorio}></ProyectosProps>
 						</React.Fragment>
 					))
 					}
-				</div>
+				</section>
 			</main>
     </>
   )
