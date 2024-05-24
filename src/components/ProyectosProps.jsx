@@ -44,7 +44,7 @@ export const ProyectosProps = ({nombre, descripcion, imagen, pagina, repositorio
             </span>
             <div className=" flex-wrap h-full w-full flex dark:bg-gray-900  mt-4">
               {languages.map((language, index) => (
-                <span key={index} className={`p-2 m-1 border-2 rounded-md ${
+                <span key={index} className={`p-2 m-1 border-2 border-gray-300 rounded-md select-none cursor-pointer ${
                     languageColors[language] || "bg-gray-300 text-black border-gray-500" /* Color por defecto */
                   }`}>
                   {language}
