@@ -1,15 +1,15 @@
 {
   "title":"Proyectos",
   "project1":"THINDER PET",
-  "text1":"Es una aplicación diseñada para ayudar a los dueños de mascotas a encontrar una compañía adecuada para sus adorables amigos peludos. Este proyecto fue desarrollado como proyecto en No Country, y para su creación se utilizaron tecnologías de vanguardia como Tailwind CSS, ReactJS y TypeScript.",
+  "text1":"Es una aplicación diseñada para ayudar a los dueños de mascotas a encontrar una compañía adecuada para sus adorables amigos peludos. Este proyecto fue desarrollado como proyecto en No Country.",
   "project2":"NEARBYTOUR",
-  "text2":"NearByTour es tu puerta de entrada a las joyas ocultas del mundo, esos lugares secretos que solo los lugareños conocen. Descubre tesoros inexplorados, aventuras únicas y la auténtica cultura local con NearByTour.  ",
-  "project3":"REST COUNTRIES API",
-  "text3":"Aplicación web que utiliza la REST Countries API, los usuarios pueden explorar datos de diferentes países. Desarrollada con tecnologías como React Js, HTML, CSS y API REST.",
+  "text2":"NearByTour es tu puerta de entrada a las joyas ocultas del mundo, esos lugares secretos que solo los lugareños conocen. Descubre tesoros inexplorados, aventuras únicas y la auténtica cultura local con NearByTour. ",
+  "project3":"STAR WARS API CHALLENGE",
+  "text3":"Desarrollé una aplicación utilizando la API de SWAPI (Star Wars API) como parte de un desafío técnico para una empresa. Este proyecto me permitió poner a prueba mis conocimientos y habilidades en el desarrollo de aplicaciones y en el consumo de APIs",
   "project4":"PROYECTO DE CODO A CODO",
-  "text4":"Proyecto del curso Java FullStack de Codo a CoDurante mi participación en el curso Java FullStack de Codo a Codo, desarrollé un proyecto utilizando una combinación de tecnologías clave que incluyen HTML, CSS, Bootstrap y JavaScript..",
+  "text4":"Proyecto del curso Java FullStack de Codo a Codo. Durante mi participación en el curso Java FullStack de Codo a Codo, desarrollé un CRUD y una landing page",
   "project5":"DRINKVENTRY",
-  "text5":"DrinkVentry es una aplicación para la gestión eficiente de inventarios de bebidas. Permite el control de diversas bebidas, incluyendo funciones como eliminación, creación y modificación. Además, presenta un sistema distintivo de administración con roles separados para el administrador y el usuario  ",
+  "text5":"DrinkVentry es una aplicación para la gestión de inventarios de bebidas. Permite el control de diversas bebidas. Además, presenta un sistema distintivo de administración con roles separados para el administrador y el usuario  ",
   "project6":"DIGITAL CORNER",
-  "text6":"Digital Corner es un blog dinámico que te permite escribir posts sobre tecnologías. Aquí, puedes construir tu comunidad al tener seguidores y seguir a personas que comparten tu interés. Además, disfrutarás de un eficiente sistema de búsqueda tanto para encontrar publicaciones relevantes como para descubrir usuarios afines."
+  "text6":"Digital Corner es un blog dinámico que te permite escribir posts sobre tecnologías. Aquí, puedes construir tu comunidad al tener seguidores y seguir a personas que comparten tu interés."
 }

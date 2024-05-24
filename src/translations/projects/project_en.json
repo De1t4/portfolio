@@ -1,15 +1,15 @@
 {
   "title": "Projects",
   "project1": "THINDER PET",
-  "text1": "It is an application designed to help pet owners find suitable companions for their adorable furry friends. This project was developed as part of No Country, utilizing cutting-edge technologies such as Tailwind CSS, ReactJS, and TypeScript.",
+  "text1": "This is an application designed to help pet owners find suitable companions for their adorable furry friends. This project was developed as part of a No Country project.",
   "project2": "NEARBYTOUR",
-  "text2": "NearByTour is your gateway to the hidden gems of the world, those secret places known only to the locals. Discover unexplored treasures, unique adventures, and authentic local culture with NearByTour.",
-  "project3": "REST COUNTRIES API",
-  "text3": "A web application that utilizes the REST Countries API, allowing users to explore data from different countries. Developed using technologies such as React Js, HTML, CSS, and REST API.",
+  "text2": "NearByTour is your gateway to the hidden gems of the world, those secret places only locals know about. Discover unexplored treasures, unique adventures, and authentic local culture with NearByTour.",
+  "project3": "STAR WARS API CHALLENGE",
+  "text3": "I developed an application using the SWAPI (Star Wars API) as part of a technical challenge for a company. This project allowed me to put my knowledge and skills in application development and API consumption to the test.",
   "project4": "CODO A CODO PROJECT",
-  "text4": "Project from the Codo a Codo Java FullStack course. During my participation in the Codo a Codo Java FullStack course, I developed a project using a combination of key technologies, including HTML, CSS, Bootstrap, and JavaScript.",
+  "text4": "Project from the Java FullStack course at Codo a Codo. During my participation in the Java FullStack course at Codo a Codo, I developed a CRUD and a landing page.",
   "project5": "DRINKVENTRY",
-  "text5": "DrinkVentry is an application for the efficient management of beverage inventories. It allows control of various drinks, including functions such as deletion, creation, and modification. Additionally, it features a distinctive administration system with separate roles for the administrator and the user.",
+  "text5": "DrinkVentry is an application for managing beverage inventories. It allows control over various beverages and features a distinctive management system with separate roles for the administrator and the user.",
   "project6": "DIGITAL CORNER",
-  "text6": "Digital Corner is a dynamic blog that allows you to write posts about technologies. Here, you can build your community by having followers and following people who share your interest. Additionally, you'll enjoy an efficient search system, both to find relevant posts and to discover like-minded users."
+  "text6": "Digital Corner is a dynamic blog that allows you to write posts about technologies. Here, you can build your community by having followers and following people who share your interests."
 }
