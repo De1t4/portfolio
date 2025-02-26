@@ -10,6 +10,7 @@
   "name": "Name",
   "message": "Your Message",
   "textMessage": "Leave me your message...",
-  "btnText":"Send Message"
-
+  "btnText":"Send Message",
+  "errorMessageEmail": "Error sending message. Try again later.",
+  "successMessage": "Message sent successfully!"
   }

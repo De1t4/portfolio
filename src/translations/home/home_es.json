@@ -9,5 +9,7 @@
   "name":"Nombre",
   "message":"Tu mensaje",
   "textMessage":"Dejame tu mensaje...",
-  "btnText":"Enviar Mensaje"
+  "btnText":"Enviar Mensaje",
+  "errorMessageEmail": "Error al enviar el mensaje. Inténtalo más tarde.",
+  "successMessage": "¡Mensaje enviado con éxito!"
 }

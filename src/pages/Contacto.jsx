@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContactForm } from '../components/Contact'
+import { ContactForm } from '../shared/components/ContactForm';
 import { useTranslation } from 'react-i18next';
 
 export default function Contacto() {

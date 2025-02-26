@@ -1,27 +1,28 @@
 import React from 'react'
 import {FaGithub, FaRocket } from 'react-icons/fa'
+
+export const languageColors = {
+  "React.Js": " dark:text-black border-t-4 border-t-blue-700",
+  "TypeScript": " dark:text-black border-t-4 border-t-teal-700",
+  "HTML5": "dark:text-black border-t-4 border-t-orange-700",
+  "Tailwind CSS": "dark:text-black border-t-4 border-t-indigo-700",
+  "Mongo DB": " dark:text-black border-t-4 border-t-green-700",
+  "Next.Js": "dark:text-black border-t-4 border-t-purple-700",
+  "Python": "text-black border-t-4 border-t-yellow-700",
+  "FastAPI": " dark:text-black border-t-4 border-t-cyan-400",
+  "MySQL": "dark:text-black border-t-4 border-t-gray-700",
+  "Cloudinary": " dark:text-black border-t-4 border-t-pink-700",
+  "CSS3":"border-t-4 border-t-[#0060AD] dark:text-black",
+  "Firebase": " dark:text-black border-t-4 border-t-yellow-500",
+  "JavaScript":"dark:text-black border-t-4 border-t-yellow-600",
+  "BootStrap":"dark:text-black border-t-4 border-t-purple-500",
+  "GitHub":"dark:text-black border-t-4 border-t-black",
+  "Vite": "dark:text-black border-t-4 border-t-purple-400"
+};
+
 export const ProyectosProps = ({nombre, descripcion, imagen, pagina, repositorio, languages}) => {
 
-  const languageColors = {
-    "React.Js": " dark:text-black border-t-4 border-t-blue-700",
-    "TypeScript": " dark:text-black border-t-4 border-t-teal-700",
-    "HTML5": "dark:text-black border-t-4 border-t-orange-700",
-    "Tailwind CSS": "dark:text-black border-t-4 border-t-indigo-700",
-    "Mongo DB": " dark:text-black border-t-4 border-t-green-700",
-    "Next.Js": "dark:text-black border-t-4 border-t-purple-700",
-    "Python": "text-black border-t-4 border-t-yellow-700",
-    "FastAPI": " dark:text-black border-t-4 border-t-red-700",
-    "MySQL": "dark:text-black border-t-4 border-t-gray-700",
-    "Cloudinary": " dark:text-black border-t-4 border-t-pink-700",
-    "CSS3":"border-t-4 border-t-[#0060AD] dark:text-black",
-    "Firebase": " dark:text-black border-t-4 border-t-yellow-500",
-    "JavaScript":"dark:text-black border-t-4 border-t-yellow-600",
-    "BootStrap":"dark:text-black border-t-4 border-t-purple-500"
-
-  };
-
-
-  const styleBTN = "border-[#747bff]  rounded-sm border-2 flex gap-2 justify-center items-center px-3 py-2 text-sm focus:ring-2 focus:outline-none focus:ring-[#747bff]"
+  const styleBTN = "border-[#747bff]   rounded-sm border-2 flex gap-2 justify-center items-center px-3 py-2 text-sm focus:ring-2 focus:outline-none focus:ring-[#747bff]"
   return (
     <article class="max-w-sm max-md:m-auto h-full bg-white border border-gray-300 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700">
         <div class="h-52 rounded-t-md border-black">

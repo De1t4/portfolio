@@ -1,6 +1,7 @@
 import React from 'react'
-import { ProyectosProps } from '../components/ProyectosProps';
+import { ProyectosProps } from '../shared/components/ProyectosProps';
 import { useTranslation } from 'react-i18next';
+
 
 export default function Proyectos() {
   const { t } = useTranslation("project");

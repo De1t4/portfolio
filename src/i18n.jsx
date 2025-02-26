@@ -12,7 +12,6 @@ import aboutme_es from './translations/aboutMe/aboutme_es.json'
 import project_en from './translations/projects/project_en.json'
 import project_es from './translations/projects/project_es.json'
 
-console.log(i18n.language);
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
