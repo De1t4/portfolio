@@ -34,20 +34,24 @@ export default function Navbar() {
 	const handleNavbar = () => {
 		setOpen(!open)
 	}
-	const links = [{
-		title: t("skills"),
-		route: '/habilidades'
-	}, {
-		title: t("projects"),
-		route: '/proyectos',
-	}, {
-		title: t("aboutme"),
-		route: '/sobremi',
-	},
-	 {
-		title: t("contact"),
-		route: "/contacto"
-	}
+	const links = [
+		{
+			title: t("aboutme"),
+			route: '/sobremi',
+		},
+		{
+			title: t("skills"),
+			route: '/habilidades'
+		},
+
+		{
+			title: t("projects"),
+			route: '/proyectos',
+		},
+		{
+			title: t("contact"),
+			route: "/contacto"
+		}
 
 	]
 
@@ -92,7 +96,7 @@ export default function Navbar() {
 					</div>
 				}
 			</nav>
-			<div  className={`${open ? 'flex' : 'hidden'}  z-30 rounded-b-xl  absolute bg-zinc-100 w-full top-0 h-[33rem] flex-col items-center justify-center dark:bg-zinc-800`}>
+			<div className={`${open ? 'flex' : 'hidden'}  z-30 rounded-b-xl  absolute bg-zinc-100 w-full top-0 h-[33rem] flex-col items-center justify-center dark:bg-zinc-800`}>
 				<ol className={`bg-zinc-100 dark:bg-zinc-800`}>
 					{links.map(({ title, route, index }) => (
 						<li key={index} className='flex my-4 items-center'>
