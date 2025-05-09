@@ -39,7 +39,7 @@ export default function IconsProfile() {
         </span>
         {links.map(({ href, iconClass, text, index }) => (
           <span key={index} className='flex flex-col items-center dark:bg-zinc-900 text-zinc-100'>
-            <a href={href} target='_blank' key={text} className={`dark:bg-zinc-900 text-[#213547]`}>
+            <a href={href} target='_blank' rel='noreferrer' key={text} className={`dark:bg-zinc-900 text-[#213547]`}>
               {iconClass}
             </a>
             <p className='dark:bg-zinc-900 dark:text-zinc-100 text-[#213547]'>{text}</p>

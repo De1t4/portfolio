@@ -1,4 +1,3 @@
-import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { languageColors } from '../shared/components/ProyectosProps';
 
@@ -41,8 +40,8 @@ export default function Habilidades() {
 			image: 'python.jpg',
 		},
 		{
-			nombre: 'FastAPI',
-			image: 'fastapi.png',
+			nombre: 'Spring Boot',
+			image: 'spring.png',
 		},
 		{
 			nombre: 'Vite',

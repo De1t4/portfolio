@@ -113,7 +113,7 @@ export default function Navbar() {
 				</select>
 			</div>
 
-			<div className={`${open ? 'flex' : 'hidden'} fixed top-0 left-0 w-full h-full flex items-center bg-black bg-opacity-50 z-0`} onClick={handleNavbar}></div>
+			<div className={`${open ? 'flex' : 'hidden'} fixed top-0 left-0 w-full h-full flex items-center bg-black bg-opacity-50 z-10 `} onClick={handleNavbar}></div>
 		</>
 	)
 }
