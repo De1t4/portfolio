@@ -7,7 +7,7 @@ export default function ContactMe() {
         <p className="text-center text-gray-400 mb-12">
           ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él
         </p>
-        <div className="bg-gray-800 border-gray-700">
+        <div className="bg-gray-800 border-gray-700 rounded-md">
           <div className="p-6">
             <form className="space-y-6">
               <div>
@@ -20,6 +20,7 @@ export default function ContactMe() {
                   type="email"
                   placeholder="tu@email.com"
                   required
+                  autoComplete="on"
                   className="bg-gray-700 p-2 w-full rounded-md border-gray-600 text-gray-100 placeholder:text-gray-400 focus:border-emerald-500"
                 />
               </div>
@@ -33,6 +34,7 @@ export default function ContactMe() {
                   type="text"
                   placeholder="Tu nombre"
                   required
+                  autoComplete="on"
                   className="bg-gray-700 p-2 w-full rounded-md border-gray-600 text-gray-100 placeholder:text-gray-400 focus:border-emerald-500"
                 />
               </div>
@@ -46,6 +48,7 @@ export default function ContactMe() {
                   placeholder="Cuéntame sobre tu proyecto..."
                   rows={5}
                   required
+                  autoComplete="on"
                   className="bg-gray-700 p-2 w-full rounded-md border-gray-600 text-gray-100 placeholder:text-gray-400 focus:border-emerald-500"
                 />
               </div>

@@ -8,7 +8,7 @@ export default function HeroProfile() {
     toast.success('Email Copiado')
   }
   return (
-    <section className="py-4 px-4 h-[calc(100dvh-64px)] flex items-center">
+    <section className=" px-4 h-[calc(100dvh-64px)] flex items-center">
       <div className="container mx-auto max-w-4xl text-center">
         <div className="mb-8">
           <img

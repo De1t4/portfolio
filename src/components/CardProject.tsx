@@ -23,8 +23,9 @@ export default function CardProject({ image, title, description, technologies, l
         </div>
         <div>
           <div className="flex flex-wrap gap-2 mb-4">
-            {technologies.map((tech) => (
+            {technologies.map((tech, indexTech) => (
               <span
+                key={indexTech}
                 className="text-xs cursor-pointer p-2 rounded-sm bg-gray-700 text-gray-300 hover:bg-gray-600"
               >
                 {tech}
@@ -35,7 +36,6 @@ export default function CardProject({ image, title, description, technologies, l
             <button className="flex-1 justify-center items-center flex p-2 bg-emerald-500 rounded-md hover:bg-emerald-600 text-gray-950"
               type="button"
               onClick={() => window.open(links.demo, "_blank")}
-
             >
               <ExternalLink className="w-4 h-4 mr-2" />
               Demo

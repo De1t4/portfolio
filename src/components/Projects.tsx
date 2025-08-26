@@ -66,6 +66,7 @@ export default function Projects() {
         <div className="grid  grid-cols-2 gap-4 max-md:grid-cols-1 md:gap-6 lg:grid-cols-3">
           {projects.map((project) => (
             <CardProject
+              key={project.title}
               image={project.image}
               title={project.title}
               description={project.description}
