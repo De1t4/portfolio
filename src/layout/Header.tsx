@@ -18,8 +18,8 @@ export default function Header() {
           <a href="#projects" className="text-sm font-medium text-gray-300 hover:text-emerald-400 transition-colors">
             Proyectos
           </a>
-          <a href="#timeline" className="text-sm font-medium text-gray-300 hover:text-emerald-400 transition-colors">
-            Timeline
+          <a href="#education" className="text-sm font-medium text-gray-300 hover:text-emerald-400 transition-colors">
+            Educación
           </a>
           <a href="#contact" className="text-sm font-medium text-gray-300 hover:text-emerald-400 transition-colors">
             Contacto

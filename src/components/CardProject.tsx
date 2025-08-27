@@ -19,7 +19,7 @@ export default function CardProject({ image, title, description, technologies, l
       <div className="p-4">
         <div className="mb-4 space-y-2">
           <div className="font-montserrat font-bold text-gray-100">{title}</div>
-          <div className="line-clamp-3 text-gray-400">{description}</div>
+          <div className="line-clamp-4 text-gray-400">{description}</div>
         </div>
         <div>
           <div className="flex flex-wrap gap-2 mb-4">

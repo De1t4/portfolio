@@ -9,23 +9,24 @@ export default function AboutMe() {
           <div>
             <p className="text-lg leading-relaxed mb-6 text-gray-300">
               Soy Análista en Sistemas con pasión por el desarrollo web y la tecnología. Me especializo
-              en crear aplicaciones modernas utilizando React, Next.js y tecnologías del ecosistema JavaScript.
+              en crear aplicaciones modernas utilizando React, Next.js, Java, Spring Boot y tecnologías del ecosistema JavaScript.
             </p>
             <p className="text-lg leading-relaxed mb-6 text-gray-300">
               Mi enfoque se centra en escribir código limpio, crear interfaces intuitivas y resolver problemas
-              complejos con soluciones elegantes y eficientes. Me encanta aprender nuevas tecnologías y
-              mantenerme actualizado con las últimas tendencias en desarrollo web.
+              complejos con soluciones elegantes y eficientes. Me encanta mantenerme actualizado con las últimas tendencias en desarrollo web.
             </p>
             <div className="flex flex-wrap gap-8 justify-center items-center ">
               <a
-                href="#"
+                href="https://github.com/De1t4"
+                target="_blank"
                 className="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors"
               >
                 <Github className="w-5 h-5" />
                 GitHub
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/mauriciochambi/"
+                target="_blank"
                 className="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />

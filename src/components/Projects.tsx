@@ -9,8 +9,8 @@ export default function Projects() {
       image: "./images/miltaryapp.png",
       technologies: ["Next.js", "TypeScript", "HTML5", "Tailwind CSS", "Spring Boot", "Java", "MySQL"],
       links: {
-        demo: "#",
-        github: "#",
+        demo: "https://www.linkedin.com/feed/update/urn:li:activity:7326682386165821440/",
+        github: "https://github.com/De1t4/ejercito-project-react-typescript.git",
       }
     },
     {
@@ -20,8 +20,8 @@ export default function Projects() {
       image: "./images/justina.png",
       technologies: ["React.js", "TypeScript", "Tailwind CSS", "MySQL", "Spring Boot", "Java"],
       links: {
-        demo: "#",
-        github: "#",
+        demo: "https://justina-io-h107.netlify.app/",
+        github: "https://github.com/No-Country-simulation/h1-07-java-react-",
       },
     },
     {
@@ -31,8 +31,8 @@ export default function Projects() {
       image: "/images/nearby.png",
       technologies: ["Next.js", "TypeScript", "HTML5", "Tailwind CSS", "Firebase", "Cloudinary"],
       links: {
-        demo: "#",
-        github: "#",
+        demo: 'https://nearbytour.vercel.app/home',
+        github: 'https://github.com/No-Country/s11-21-react-next',
       },
     },
     {
@@ -42,8 +42,8 @@ export default function Projects() {
       image: "./images/blogapp.png",
       technologies: ["Next.js", "TypeScript", "HTML5", "Tailwind CSS", "Python", "FastAPI", "MySQL", "Cloudinary"],
       links: {
-        demo: "#",
-        github: "#",
+        demo: 'https://digital-corner.netlify.app/',
+        github: 'https://github.com/De1t4/blog-app-frontend',
       },
     },
     {
@@ -53,8 +53,8 @@ export default function Projects() {
       image: "./images/drinkventry.png",
       technologies: ["React.js", "TypeScript", "HTML5", "Tailwind CSS", "Mongo DB", "Node.js", "Express.js"],
       links: {
-        demo: "#",
-        github: "#",
+        demo: 'https://drinkventry.netlify.app/',
+        github: 'https://github.com/No-Country/s12-23-tn-typescript-react/tree/developer',
       },
     },
   ]
