@@ -12,8 +12,8 @@ export default function Header() {
           <a href="#about" className="text-sm font-medium text-gray-300 hover:text-emerald-400 transition-colors">
             Sobre mí
           </a>
-          <a href="#skills" className="text-sm font-medium text-gray-300 hover:text-emerald-400 transition-colors">
-            Habilidades
+          <a href="#experience" className="text-sm font-medium text-gray-300 hover:text-emerald-400 transition-colors">
+            Experiencia
           </a>
           <a href="#projects" className="text-sm font-medium text-gray-300 hover:text-emerald-400 transition-colors">
             Proyectos

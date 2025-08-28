@@ -1,5 +1,11 @@
+import { type FormEvent } from "react";
+
 export default function ContactMe() {
 
+
+  const handleFormSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+  };
   return (
     <section id="contact" className="py-16 px-4 my-4 bg-gray-900/50">
       <div className="container mx-auto max-w-2xl">
@@ -9,7 +15,7 @@ export default function ContactMe() {
         </p>
         <div className="bg-gray-800 border-gray-700 rounded-md">
           <div className="p-6">
-            <form className="space-y-6">
+            <form onSubmit={handleFormSubmit} className="space-y-6">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-300">
                   Email
