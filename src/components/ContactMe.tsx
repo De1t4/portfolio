@@ -1,6 +1,8 @@
 import { type FormEvent, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { toast } from "sonner";
+import { motion } from "motion/react";
+import { staggerContainer } from "../utils/Animations";
 
 export default function ContactMe() {
 
@@ -28,13 +30,29 @@ export default function ContactMe() {
   };
 
   return (
-    <section id="contact" className="py-16 px-4 my-4 bg-gray-900/50">
+    <motion.section
+      className="py-16 px-4 bg-gray-900/50 "
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="visible"
+      id="about"
+      viewport={{ once: true, amount: 0.5 }} // aparece al 20% en pantalla
+    >
       <div className="container mx-auto max-w-2xl">
         <h2 className="font-montserrat font-bold text-3xl text-center mb-4 text-gray-100">Contáctame</h2>
         <p className="text-center text-gray-400 mb-12">
           ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él
         </p>
-        <div className="bg-gray-800 border-gray-700 rounded-md">
+        <motion.div
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { duration: 0.8 },
+            },
+          }}
+          className="bg-gray-800 border-gray-700 rounded-md"
+        >
           <div className="p-6">
             <form ref={form} onSubmit={OnSendEmail} className="space-y-6">
               <div>
@@ -88,9 +106,9 @@ export default function ContactMe() {
               </button>
             </form>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
 
   )
 }
