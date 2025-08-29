@@ -35,7 +35,7 @@ export default function ContactMe() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="visible"
-      id="about"
+      id="contact"
       viewport={{ once: true, amount: 0.5 }} // aparece al 20% en pantalla
     >
       <div className="container mx-auto max-w-2xl">
