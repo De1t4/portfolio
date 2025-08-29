@@ -51,7 +51,7 @@ export default function Experience() {
 
 
   return (
-    <section id="experience" className="py-16 px-4 ">
+    <section id="experience" className="py-16 ">
       <div className="container mx-auto w-full">
         <h2 className="font-montserrat font-bold text-3xl text-center mb-4 text-gray-100">Experiencia Profesional</h2>
         <div className="space-y-8 ">
@@ -90,10 +90,10 @@ export default function Experience() {
                 <p className="text-gray-300 mb-4 leading-relaxed mt-2">{exp.description}</p>
 
                 <div className="mb-4">
-                  <h4 className="font-semibold text-gray-100 mb-2 flex items-center gap-2">
+                  <p className="font-semibold text-gray-100 mb-2 flex items-center gap-2">
                     <Users className="w-4 h-4 text-emerald-400" />
                     Logros principales:
-                  </h4>
+                  </p>
                   <ul className="list-disc list-inside space-y-1 text-gray-300 ml-6">
                     {exp.achievements.map((achievement, achIndex) => (
                       <li key={achIndex}>{achievement}</li>

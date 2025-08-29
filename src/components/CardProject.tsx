@@ -1,4 +1,6 @@
 import { ExternalLink, Github } from "lucide-react"
+import { motion } from "motion/react"
+import { fadeInGroup } from "../utils/Animations"
 
 interface CardProjectProps {
   image: string, title: string, description: string, technologies: string[], links: { demo: string, github: string }
@@ -6,7 +8,8 @@ interface CardProjectProps {
 
 export default function CardProject({ image, title, description, technologies, links }: CardProjectProps) {
   return (
-    <div
+    <motion.div
+      variants={fadeInGroup}
       className="overflow-hidden hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-2 bg-gray-800 border-gray-700"
     >
       <div className="aspect-video overflow-hidden">
@@ -51,6 +54,6 @@ export default function CardProject({ image, title, description, technologies, l
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
