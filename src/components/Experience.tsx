@@ -50,9 +50,9 @@ export default function Experience() {
                 </div>
               </div>
               <div>
-                <p className="text-gray-300 mb-4 leading-relaxed mt-2">{exp.description}</p>
+                {/* <p className="text-gray-300 mb-4 leading-relaxed mt-2">{exp.description}</p> */}
 
-                <div className="mb-4">
+                <div className="my-4">
                   <p className="font-semibold text-gray-100 mb-2 flex items-center gap-2">
                     <Users className="w-4 h-4 text-emerald-400" />
                     Logros principales:
