@@ -3,6 +3,7 @@ import { FileText, Mail } from "lucide-react";
 import { motion } from "motion/react";
 import { toast } from "sonner";
 
+
 export default function HeroProfile() {
   const onCopyMail = () => {
     copy('mauriciochambicaceres@gmail.com')
@@ -10,7 +11,7 @@ export default function HeroProfile() {
   }
   return (
     <>
-      <section className="px-4 h-[calc(100dvh-64px)] flex items-center">
+      <section className="relative px-4 h-[calc(100dvh-64px)]  flex items-center overflow-hidden">
         <motion.div
           className="absolute inset-0 -z-10"
           animate={{
