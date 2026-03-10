@@ -108,14 +108,6 @@ export const timeline = [
       "Inicié mis estudios en la carrera de Licenciatura en Ciencia de Datos, con el objetivo de especializarme mis habilidades en programación y estadística.",
     icon: <ChartColumnIncreasing />,
   },
-  // {
-  //   period: "2023 Mar - Presente",
-  //   title: "Informática Aplicada",
-  //   subtitle: "Estudio actual",
-  //   description:
-  //     "Empecé mi segunda carrera en Técnico en Informática Aplicada, con el objetivo de profundizar mis conocimientos en programación y desarrollo de software.",
-  //   icon: <MonitorCog />,
-  // },
   {
     period: "2022 Mar - 2024 Dic",
     title: "Análisis en Sistemas",
@@ -128,13 +120,12 @@ export const timeline = [
 
 export const experiences = [
   {
-    company: "Freelance",
-    position: " Desarrollador Web",
-    period: "Jun 2025 - Actualidad",
+    company: "Primarket",
+    position: "Desarrollador Web",
+    period: "Jun 2025 - Dic 2025",
     location: "Buenos Aires, Argentina",
-    type: "Tiempo Parcial",
-    description:
-      "Me desempeño como desarrollador web freelance, liderando el desarrollo frontend de un e-commerce B2B. Dirijo un equipo de 5 personas, asignando tareas, realizando code reviews y coordinando reuniones con líderes de otras áreas. Garantizo un desarrollo eficiente y escalable, aplicando la metodología ágil Scrum",
+    type: "Profesional Independiente",
+    link: "https://primarket.codershub.top/",
     technologies: ["HTML5", "React.js", "Tailwind CSS", "MySQL", "Spring Boot", "Java", "Git", "Next.js", "Zustand", "Material UI", "Scrum"],
     achievements: [
       "Lideré el equipo de Frontend (5 miembros), implementando Scrum para la entrega de un e-commerce B2B mayorista con un 10% de ahorro de tiempo respecto al plazo inicial",
@@ -147,23 +138,23 @@ export const experiences = [
     company: "IcarisTech",
     position: "Desarrollador Web",
     period: "Sep 2024 - Mar 2025",
-    location: "Remoto",
-    type: "Contractor",
-    description:
-      "Desarrollo de aplicaciones web completas para startups y pymes. Creación de APIs RESTful, bases de datos y interfaces de usuario. Trabajo directo con fundadores para materializar sus ideas en productos digitales. Documentación y mantenimiento de código. Soporte post-lanzamiento.",
+    link: "https://www.linkedin.com/company/icaristech/",
+    location: "Buenos Aires, Argentina",
+    type: "Profesional Independiente",
     technologies: ["HTML5", "React.js", "Tailwind CSS", "MySQL", "Spring Boot", "Java", "Git", "Docker", "Figma", "Mercado Pago"],
     achievements: [
       "Gestioné la comunicación directa con clientes para la toma de requerimientos y alineando el desarrollo con las necesidades del negocio.",
       "Desarrollé módulos críticos (gestión de pagos y carritos) utilizando React y Java, asegurando transacciones seguras y optimizando el flujo de compra del usuario",
-      "Implementé interfaces intuitivas optimizadas, asegurando una experiencia de usuario fluida y alineada con laidentidad de marca del cliente. ",
+      "Implementé interfaces intuitivas optimizadas, asegurando una experiencia de usuario fluida y alineada con la identidad de marca del cliente. ",
     ],
   },
   {
     company: "No Country",
-    position: "Desarrollador Frontend (Prácticas)",
+    position: "Desarrollador Frontend",
     period: "Ene 2024 - Ago 2024",
     location: "Remoto",
-    type: "Prácticas",
+    link: "https://nocountry.tech/",
+    type: "Contrato de prácticas",
     description:
       "Prácticas profesionales en agencia digital especializada en sitios web corporativos. Aprendizaje de metodologías ágiles, trabajo en equipo y desarrollo de proyectos reales para clientes de diversos sectores.",
     technologies: ["React.Js", "HTML5", "Tailwind CSS", "TypeScript", "JavaScript", "Next.Js", "Git", "Figma", "Scrum",],
