@@ -10,33 +10,39 @@ export default function CardProject({ image, title, description, technologies, l
   return (
     <motion.div
       variants={fadeInGroup}
-      className="overflow-hidden hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-2 bg-gray-800 border-gray-700"
+      className="flex flex-col h-full bg-gray-900/40 backdrop-blur-md border border-gray-800/80 rounded-2xl overflow-hidden hover:border-emerald-500/30 hover:shadow-[0_0_30px_rgba(16,185,129,0.06)] hover:-translate-y-2 transition-all duration-300 group"
     >
-      <div className="aspect-video overflow-hidden">
+      <div className="aspect-video overflow-hidden relative">
         <img
           src={image || "/placeholder.svg"}
           alt={title}
-          className="w-full h-full r hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-950/50 via-transparent to-transparent pointer-events-none" />
       </div>
-      <div className="p-4">
-        <div className="mb-4 space-y-2">
-          <div className="font-montserrat font-bold text-gray-100">{title}</div>
-          <div className="line-clamp-4 text-gray-400">{description}</div>
+      <div className="p-6 flex flex-col justify-between flex-grow">
+        <div className="mb-6 space-y-3">
+          <h3 className="font-montserrat font-bold text-lg text-gray-100 group-hover:text-emerald-300 transition-colors duration-200">
+            {title}
+          </h3>
+          <p className="text-gray-400 text-sm leading-relaxed line-clamp-4">
+            {description}
+          </p>
         </div>
         <div>
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className="flex flex-wrap gap-2 mb-6">
             {technologies.map((tech, indexTech) => (
               <span
                 key={indexTech}
-                className="text-xs cursor-pointer p-2 rounded-sm bg-gray-700 text-gray-300 hover:bg-gray-600"
+                className="text-xs px-2.5 py-1.5 rounded-full bg-gray-800/40 border border-gray-850 text-gray-300 hover:bg-emerald-500/10 hover:text-emerald-400 hover:border-emerald-500/20 transition-all duration-200 cursor-default"
               >
                 {tech}
               </span>
             ))}
           </div>
-          <div className="flex gap-2">
-            <button className="flex-1 justify-center items-center flex p-2 bg-emerald-500 rounded-md hover:bg-emerald-600 text-gray-950"
+          <div className="flex gap-3">
+            <button
+              className="flex-1 justify-center items-center flex py-2.5 px-4 bg-emerald-500 hover:bg-emerald-600 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] text-gray-950 font-bold rounded-xl transition-all duration-200"
               type="button"
               onClick={() => window.open(links.demo, "_blank")}
             >
@@ -44,7 +50,7 @@ export default function CardProject({ image, title, description, technologies, l
               Demo
             </button>
             <button
-              className="flex-1 justify-center items-center flex p-2 border-collapse rounded-md border  border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-gray-100 bg-transparent"
+              className="flex-1 justify-center items-center flex py-2.5 px-4 bg-gray-800/60 border border-gray-700/80 hover:border-emerald-500/30 hover:text-emerald-400 text-gray-300 font-bold rounded-xl transition-all duration-200"
               type="button"
               onClick={() => window.open(links.github, "_blank")}
             >

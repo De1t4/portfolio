@@ -98,7 +98,6 @@ export const projects = [
   },
 ];
 
-
 export const timeline = [
   {
     period: "2025 Ago - Presente",
@@ -116,7 +115,7 @@ export const timeline = [
       "Inicié mi primera carrera en Técnico en Análisis de Sistemas, con muchas dudas pero con el objetivo de explorar el mundo de la tecnología y la programación.",
     icon: <BookMarked />,
   },
-]
+];
 
 export const experiences = [
   {
@@ -126,12 +125,24 @@ export const experiences = [
     location: "Buenos Aires, Argentina",
     type: "Profesional Independiente",
     link: "https://primarket.codershub.top/",
-    technologies: ["HTML5", "React.js", "Tailwind CSS", "MySQL", "Spring Boot", "Java", "Git", "Next.js", "Zustand", "Material UI", "Scrum"],
+    technologies: [
+      "HTML5",
+      "React.js",
+      "Tailwind CSS",
+      "MySQL",
+      "Spring Boot",
+      "Java",
+      "Git",
+      "Next.js",
+      "Zustand",
+      "Material UI",
+      "Scrum",
+    ],
     achievements: [
-      "Lideré el equipo de Frontend (5 miembros), implementando Scrum para la entrega de un e-commerce B2B mayorista con un 10% de ahorro de tiempo respecto al plazo inicial",
-      "Revisé más de 100 PRs, lo que resultó en una reducción del 30% de errores en el despliegue de la aplicación.",
-      "Mantuve y modernicé la base de código, garantizando la adopción de mejores prácticas para optimizar la escalabilidad del sistema y reducir la deuda técnica.",
-      "Coordiné la integración con el equipo de Backend, definiendo las APIs y optimizando el manejo de datos para mejorar los tiempos de carga en el cliente."
+      "Lideré un equipo técnico de 5 desarrolladores bajo metodología ágiles, optimizando los tiempos de entrega de los sprints en un 30%.",
+      "Fomenté la estandarización del código mediante la revisión de más de 100 PRs e implementación de herramientas de calidad, aplicando patrones de diseño y promoviendo buenas prácticas para reducir un 30% los errores de despliegue.",
+      "Refactorización de código heredado (legacy code) hacia arquitecturas limpias y modulares en React, facilitando la escalabilidad del sistema y reduciendo el tiempo de inducción de nuevos desarrolladores.",
+      "Guiado y apoyo técnico a desarrolladores menos experimentados en la adopción de buenas prácticas de programación y estándares del proyecto.",
     ],
   },
   {
@@ -141,11 +152,23 @@ export const experiences = [
     link: "https://www.linkedin.com/company/icaristech/",
     location: "Buenos Aires, Argentina",
     type: "Profesional Independiente",
-    technologies: ["HTML5", "React.js", "Tailwind CSS", "MySQL", "Spring Boot", "Java", "Git", "Docker", "Figma", "Mercado Pago"],
+    technologies: [
+      "HTML5",
+      "React.js",
+      "Tailwind CSS",
+      "MySQL",
+      "Spring Boot",
+      "Java",
+      "Git",
+      "Docker",
+      "Figma",
+      "Mercado Pago",
+    ],
     achievements: [
-      "Gestioné la comunicación directa con clientes para la toma de requerimientos y alineando el desarrollo con las necesidades del negocio.",
-      "Desarrollé módulos críticos (gestión de pagos y carritos) utilizando React y Java, asegurando transacciones seguras y optimizando el flujo de compra del usuario",
+      "Trabajé en equipo para un cliente directo, gestionando la comunicación técnica y negociación de requerimientos para alinear el desarrollo con objetivos de negocio.",
+      "Diseñe componentes críticos e integré pasarela de Mercado Pago, asegurando transacciones seguras mediante un manejo robusto de estados y APIs.",
       "Implementé interfaces intuitivas optimizadas, asegurando una experiencia de usuario fluida y alineada con la identidad de marca del cliente. ",
+      "Desarrollo y entrega del 100% de los módulos críticos acordados bajo contrato dentro de los plazos estipulados, logrando un índice de satisfacción del cliente excelente.",
     ],
   },
   {
@@ -157,11 +180,21 @@ export const experiences = [
     type: "Contrato de prácticas",
     description:
       "Prácticas profesionales en agencia digital especializada en sitios web corporativos. Aprendizaje de metodologías ágiles, trabajo en equipo y desarrollo de proyectos reales para clientes de diversos sectores.",
-    technologies: ["React.Js", "HTML5", "Tailwind CSS", "TypeScript", "JavaScript", "Next.Js", "Git", "Figma", "Scrum",],
+    technologies: [
+      "React.Js",
+      "HTML5",
+      "Tailwind CSS",
+      "TypeScript",
+      "JavaScript",
+      "Next.Js",
+      "Git",
+      "Figma",
+      "Scrum",
+    ],
     achievements: [
-      "Desarrollé 4 nuevas aplicaciones web tipo MVPs (Productos Mínimos Viables) en entornos de simulación laboral, colaborando con equipos multidisciplinarios (Diseño, Backend, QA) bajo metodologías ágiles.",
-      "Implementé arquitecturas escalables con React, TypeScript y Tailwind CSS, logrando despliegues en producción robustos y libres de errores críticos. ",
-      "Logros:  Obtuve el 2º puesto entre 15 equipos en el Hackathon 'Justina.IO', desarrollando y presentando unasolución funcional.",
+      "Colaboración activa en el ciclo completo de desarrollo de 4 MVPs, priorizando características esenciales junto al equipo para validar ideas de producto de forma ágil y eficientes",
+      "Participación activa en sesiones de Code Review, recibiendo feedback técnico constructivo para mejorar la calidad de mi código y aplicando las sugerencias de manera inmediata.",
+      "Obtención del 2.° puesto en el Hackatón Interno de la organización Justina.IO, diseñando y prototipando una característica innovadora evaluada bajo criterios de viabilidad técnica, negocio y presentación ante un jurado.",
     ],
   },
-]
+];

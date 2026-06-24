@@ -1,6 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { useRef, type FormEvent } from 'react';
 import { toast } from 'sonner';
+import { Send } from 'lucide-react';
 
 export default function FormContact() {
   const form = useRef<HTMLFormElement>(null);
@@ -26,11 +27,11 @@ export default function FormContact() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-8 md:p-10">
       <form ref={form} onSubmit={onSendEmail} className="space-y-6">
         <div>
-          <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-300">
-            Email
+          <label htmlFor="email" className="block text-sm font-semibold mb-2 text-gray-300 tracking-wide">
+            Correo Electrónico
           </label>
           <input
             id="email"
@@ -39,12 +40,12 @@ export default function FormContact() {
             placeholder="tu@email.com"
             required
             autoComplete="on"
-            className="bg-gray-700 p-2 w-full rounded-md border-gray-600 text-gray-100 placeholder:text-gray-400 focus:border-emerald-500"
+            className="w-full px-4 py-3 rounded-xl bg-gray-950 border border-gray-800 text-gray-100 placeholder:text-gray-500 focus:outline-none focus:border-emerald-500/50 focus:ring-2 focus:ring-emerald-500/10 transition-all duration-200"
           />
         </div>
         <div>
-          <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-300">
-            Nombre
+          <label htmlFor="name" className="block text-sm font-semibold mb-2 text-gray-300 tracking-wide">
+            Nombre Completo
           </label>
           <input
             id="name"
@@ -53,12 +54,12 @@ export default function FormContact() {
             placeholder="Tu nombre"
             required
             autoComplete="on"
-            className="bg-gray-700 p-2 w-full rounded-md border-gray-600 text-gray-100 placeholder:text-gray-400 focus:border-emerald-500"
+            className="w-full px-4 py-3 rounded-xl bg-gray-950 border border-gray-800 text-gray-100 placeholder:text-gray-500 focus:outline-none focus:border-emerald-500/50 focus:ring-2 focus:ring-emerald-500/10 transition-all duration-200"
           />
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-300">
-            Tu mensaje
+          <label htmlFor="message" className="block text-sm font-semibold mb-2 text-gray-300 tracking-wide">
+            Tu Mensaje
           </label>
           <textarea
             id="message"
@@ -67,15 +68,15 @@ export default function FormContact() {
             rows={5}
             required
             autoComplete="on"
-            className="bg-gray-700 p-2 w-full rounded-md border-gray-600 text-gray-100 placeholder:text-gray-400 focus:border-emerald-500"
+            className="w-full px-4 py-3 rounded-xl bg-gray-950 border border-gray-800 text-gray-100 placeholder:text-gray-500 focus:outline-none focus:border-emerald-500/50 focus:ring-2 focus:ring-emerald-500/10 transition-all duration-200 resize-none"
           />
         </div>
         <button
           type="submit"
-          value={"Send"}
-          className="w-full p-2 rounded-md font-semibold bg-emerald-500 hover:bg-emerald-600 text-gray-950"
+          className="w-full py-3.5 px-4 rounded-xl font-bold bg-emerald-500 hover:bg-emerald-600 hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] text-gray-950 flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer"
         >
-          Enviar Mensaje
+          <span>Enviar Mensaje</span>
+          <Send className="w-4 h-4" />
         </button>
       </form>
     </div>

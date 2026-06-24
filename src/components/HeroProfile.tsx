@@ -3,12 +3,11 @@ import { FileText, Mail } from "lucide-react";
 import { motion } from "motion/react";
 import { toast } from "sonner";
 
-
 export default function HeroProfile() {
   const onCopyMail = () => {
-    copy('mauriciochambicaceres@gmail.com')
-    toast.success('Email Copiado')
-  }
+    copy("mauriciochambicaceres@gmail.com");
+    toast.success("Email Copiado");
+  };
   return (
     <>
       <section className="relative px-4 h-[calc(100dvh-64px)]  flex items-center overflow-hidden">
@@ -92,7 +91,12 @@ export default function HeroProfile() {
               </motion.button>
 
               <motion.button
-                onClick={() => window.open("https://drive.google.com/file/d/1U9GyE5L6QR6Q3zQ_Q4_Jby9t-jGfLypV/view?usp=sharing", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1U9GyE5L6QR6Q3zQ_Q4_Jby9t-jGfLypV/view?usp=sharing",
+                    "_blank",
+                  )
+                }
                 className="w-48 flex items-center justify-center gap-2 p-2 rounded-lg border border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-gray-100 bg-transparent"
                 variants={{
                   hidden: { opacity: 0, y: 30 },
@@ -108,5 +112,5 @@ export default function HeroProfile() {
         </div>
       </section>
     </>
-  )
+  );
 }
