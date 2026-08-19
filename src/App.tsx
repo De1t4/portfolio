@@ -4,6 +4,7 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import HeroProfile from "./components/HeroProfile";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import Layout from "./layout/Layout";
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
       <Layout>
         <HeroProfile />
         <AboutMe />
+        <Skills />
         <Projects />
-        <Education />
         <Experience />
+        <Education />
         <ContactMe />
       </Layout>
     </>

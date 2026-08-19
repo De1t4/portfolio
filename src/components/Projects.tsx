@@ -29,6 +29,7 @@ export default function Projects() {
               <CardProject
                 key={project.title}
                 image={project.image}
+                images={project.images}
                 title={project.title}
                 description={project.description}
                 technologies={project.technologies}

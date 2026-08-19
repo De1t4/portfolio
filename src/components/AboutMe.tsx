@@ -29,7 +29,7 @@ export default function AboutMe() {
         >
           Sobre mí
         </motion.h2>
-        
+
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <motion.p
@@ -42,21 +42,14 @@ export default function AboutMe() {
                 },
               }}
             >
-              Soy Analista en Sistemas con pasión por el desarrollo web y la tecnología. Me especializo
-              en crear aplicaciones modernas utilizando React, Next.js, Java, Spring Boot y tecnologías del ecosistema JavaScript.
-            </motion.p>
-            <motion.p
-              className="text-base md:text-lg leading-relaxed mb-6 text-gray-300"
-              variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                  opacity: 1,
-                  transition: { duration: 0.8 },
-                },
-              }}
-            >
-              Mi enfoque se centra en escribir código limpio, crear interfaces intuitivas y resolver problemas
-              complejos con soluciones elegantes y eficientes. Me encanta mantenerme actualizado con las últimas tendencias en desarrollo web.
+              Soy Técnico Superior en Análisis de Sistemas y estudiante de Lic.
+              en Ciencia de Datos, especializado en el ecosistema React, Next.js
+              y TypeScript. Cuento con experiencia liderando equipos frontend,
+              diseñando módulos críticos y reduciendo un 30% los errores en
+              producción mediante estandarización de código y buenas prácticas.
+              <br />
+              Me encanta mantenerme actualizado con las últimas tendencias en
+              desarrollo web.
             </motion.p>
 
             <div className="flex flex-wrap gap-4 mt-8">
@@ -91,23 +84,31 @@ export default function AboutMe() {
           >
             {/* Subtle inner top-right glow */}
             <div className="absolute -top-10 -right-10 w-24 h-24 bg-emerald-500/5 rounded-full blur-2xl transition-all duration-300" />
-            
+
             <div className="space-y-4 relative z-10">
               <div className="flex items-center gap-3.5 p-3 rounded-xl hover:bg-emerald-500/5 transition-colors duration-200 group">
                 <MapPin className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-300 text-sm md:text-base font-medium">Argentina, Buenos Aires</span>
+                <span className="text-gray-300 text-sm md:text-base font-medium">
+                  Argentina, Buenos Aires
+                </span>
               </div>
               <div className="flex items-center gap-3.5 p-3 rounded-xl hover:bg-emerald-500/5 transition-colors duration-200 group">
                 <Calendar className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-300 text-sm md:text-base font-medium">Disponible para proyectos</span>
+                <span className="text-gray-300 text-sm md:text-base font-medium">
+                  Disponible para proyectos
+                </span>
               </div>
               <div className="flex items-center gap-3.5 p-3 rounded-xl hover:bg-emerald-500/5 transition-colors duration-200 group">
                 <Code className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-300 text-sm md:text-base font-medium">Desarrollador Full Stack</span>
+                <span className="text-gray-300 text-sm md:text-base font-medium">
+                  Desarrollador Full Stack
+                </span>
               </div>
               <div className="flex items-center gap-3.5 p-3 rounded-xl hover:bg-emerald-500/5 transition-colors duration-200 group">
                 <Mail className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
-                <span className="text-gray-300 text-sm md:text-base font-medium break-all">mauriciochambicaceres@gmail.com</span>
+                <span className="text-gray-300 text-sm md:text-base font-medium break-all">
+                  mauriciochambicaceres@gmail.com
+                </span>
               </div>
             </div>
           </motion.div>

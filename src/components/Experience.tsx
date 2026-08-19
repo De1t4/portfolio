@@ -1,4 +1,12 @@
-import { Calendar, MapPin, Briefcase, Code2, Terminal, ExternalLink, ChevronRight } from "lucide-react";
+import {
+  Calendar,
+  MapPin,
+  Briefcase,
+  Code2,
+  Terminal,
+  ExternalLink,
+  ChevronRight,
+} from "lucide-react";
 import { experiences } from "../data/Data";
 import { motion } from "motion/react";
 import { fadeInGroup, staggerContainer } from "../utils/Animations";
@@ -21,12 +29,13 @@ export default function Experience() {
       <div className="absolute top-1/4 right-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="container mx-auto px-4 max-w-4xl relative z-10">
+      <div className="container mx-auto px-4 max-w-4xl relative ">
         <h2 className="font-montserrat font-black text-3xl md:text-4xl text-center mb-2 text-gray-100 tracking-tight">
           Experiencia Profesional
         </h2>
         <p className="text-center text-gray-400 mb-16 max-w-md mx-auto text-sm md:text-base">
-          Mi trayectoria en el desarrollo de software y colaboración con equipos de tecnología.
+          Mi trayectoria en el desarrollo de software y colaboración con equipos
+          de tecnología.
         </p>
 
         <div className="relative">
@@ -55,10 +64,9 @@ export default function Experience() {
 
                 {/* Card Container */}
                 <div className="bg-gray-900/40 backdrop-blur-md border border-gray-800/80 rounded-2xl p-6 md:p-8 hover:border-emerald-500/30 hover:shadow-[0_0_30px_rgba(16,185,129,0.06)] hover:-translate-y-1.5 transition-all duration-300 relative overflow-hidden">
-                  
                   {/* Subtle inner top-right glow */}
                   <div className="absolute -top-10 -right-10 w-24 h-24 bg-emerald-500/5 rounded-full blur-2xl group-hover:bg-emerald-500/10 transition-all duration-300" />
-                  
+
                   <div>
                     {/* Header: Position & Badges */}
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6 border-b border-gray-800/60 pb-6">
@@ -76,7 +84,7 @@ export default function Experience() {
                             <span>{exp.company}</span>
                             <ExternalLink className="w-4 h-4" />
                           </a>
-                          
+
                           <span className="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-gray-800/80 text-gray-300 border border-gray-700/60">
                             {exp.type}
                           </span>
@@ -87,7 +95,9 @@ export default function Experience() {
                       <div className="flex flex-col items-start md:items-end gap-1.5 text-sm text-gray-400">
                         <div className="flex items-center gap-2">
                           <Calendar className="w-4 h-4 text-emerald-500/80" />
-                          <span className="font-medium text-gray-300">{exp.period}</span>
+                          <span className="font-medium text-gray-300">
+                            {exp.period}
+                          </span>
                         </div>
                         <div className="flex items-center gap-2">
                           <MapPin className="w-4 h-4 text-emerald-500/80" />
@@ -100,7 +110,10 @@ export default function Experience() {
                     <div className="mb-6">
                       <ul className="space-y-3">
                         {exp.achievements.map((achievement, achIndex) => (
-                          <li key={achIndex} className="flex items-start gap-3 text-gray-300 text-sm md:text-base leading-relaxed">
+                          <li
+                            key={achIndex}
+                            className="flex items-start gap-3 text-gray-300 text-sm md:text-base leading-relaxed"
+                          >
                             <ChevronRight className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                             <span>{achievement}</span>
                           </li>
@@ -125,7 +138,6 @@ export default function Experience() {
                       </div>
                     </div>
                   </div>
-
                 </div>
               </motion.div>
             ))}

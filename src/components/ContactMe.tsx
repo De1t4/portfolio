@@ -15,12 +15,13 @@ export default function ContactMe() {
       {/* Central soft background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="container mx-auto max-w-2xl relative z-10">
+      <div className="container mx-auto max-w-2xl relative">
         <h2 className="font-montserrat font-black text-3xl md:text-4xl text-center mb-2 text-gray-100 tracking-tight">
           Contáctame
         </h2>
         <p className="text-center text-gray-400 mb-12 text-sm md:text-base">
-          ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y cómo puedo ayudarte.
+          ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y cómo
+          puedo ayudarte.
         </p>
         <motion.div
           variants={{
@@ -39,4 +40,3 @@ export default function ContactMe() {
     </motion.section>
   );
 }
-

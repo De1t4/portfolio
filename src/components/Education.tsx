@@ -8,8 +8,8 @@ export default function Education() {
     <section id="education" className="py-20 relative overflow-hidden">
       {/* Decorative background glow */}
       <div className="absolute top-1/4 left-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
-      
-      <div className="container mx-auto px-4 max-w-4xl relative z-10">
+
+      <div className="container mx-auto px-4 max-w-4xl relative">
         <h2 className="font-montserrat font-black text-3xl md:text-4xl text-center mb-2 text-gray-100 tracking-tight">
           Formación Profesional
         </h2>
@@ -45,28 +45,32 @@ export default function Education() {
 
                 {/* Card Container */}
                 <div className="bg-gray-900/40 backdrop-blur-md border border-gray-800/80 rounded-2xl p-6 md:p-8 hover:border-emerald-500/30 hover:shadow-[0_0_30px_rgba(16,185,129,0.06)] hover:-translate-y-1.5 transition-all duration-300 relative overflow-hidden">
-                  
                   {/* Subtle inner top-right glow */}
                   <div className="absolute -top-10 -right-10 w-24 h-24 bg-emerald-500/5 rounded-full blur-2xl group-hover:bg-emerald-500/10 transition-all duration-300" />
-                  
+
                   <div>
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4 pb-4 border-b border-gray-800/60">
                       <div>
                         <h3 className="font-montserrat font-bold text-xl md:text-2xl text-gray-100 mb-1 group-hover:text-emerald-300/90 transition-colors">
                           {item.title}
                         </h3>
-                        <p className="font-semibold text-emerald-400 text-base">{item.subtitle}</p>
+                        <p className="font-semibold text-emerald-400 text-base">
+                          {item.subtitle}
+                        </p>
                       </div>
-                      
+
                       <div className="flex items-center gap-2 text-sm text-gray-400 self-start md:self-auto">
                         <Calendar className="w-4 h-4 text-emerald-500/80" />
-                        <span className="font-medium text-gray-300">{item.period}</span>
+                        <span className="font-medium text-gray-300">
+                          {item.period}
+                        </span>
                       </div>
                     </div>
-                    
-                    <p className="text-gray-300 text-sm md:text-base leading-relaxed">{item.description}</p>
-                  </div>
 
+                    <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             ))}

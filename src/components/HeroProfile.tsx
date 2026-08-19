@@ -57,7 +57,7 @@ export default function HeroProfile() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Un gusto. Soy{" "}
+              Hola, soy{" "}
               <span className="text-emerald-400">Mauricio Chambi</span>
             </motion.h1>
 
@@ -67,8 +67,9 @@ export default function HeroProfile() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              Analista en Sistemas y Desarrollador Web especializado en crear
-              experiencias digitales modernas y funcionales
+              Desarrollador Fullstack con experiencia liderando equipos y
+              construyendo productos reales para clientes{" "}
+              {/* <span className="text-gray-300 font-medium">React, Next.js</span> */}
             </motion.p>
 
             <motion.div

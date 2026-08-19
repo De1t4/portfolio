@@ -1,11 +1,80 @@
 import { BookMarked, ChartColumnIncreasing } from "lucide-react";
 
-export const projects = [
+interface ProjectType {
+  title: string;
+  description: string;
+  image: string;
+  images?: string[];
+  technologies: string[];
+  links?: {
+    demo: string;
+    github: string;
+  };
+}
+
+export const projects: ProjectType[] = [
+  {
+    title: "Sistema de Gestión de Stock",
+    description:
+      "Un emprendimiento de indumentaria gestionaba su inventario con planillas manuales, generando errores y demoras en ventas. Desarrollé un sistema fullstack con React + TypeScript y Supabase + PostgreSQL que automatiza el control de stock en tiempo real, punto de venta con cálculo automático y dashboard de métricas, reduciendo el tiempo de cierre de venta en ~50% y eliminando errores de inventario.",
+    image: "/images/jhervys.png",
+    images: [
+      "/images/jhervys.png",
+      "/images/jhervys-2.png",
+      "/images/jhervys-3.png",
+      "/images/jhervys-4.png",
+      "/images/jhervys-5.png",
+    ],
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "HTML5",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "Git",
+    ],
+    links: undefined,
+  },
+  {
+    title: "CONSULTELO",
+    description:
+      "Profesionales independientes necesitaban gestionar consultas online sin depender de canales informales. Creé una plataforma SaaS con Next.js + Prisma + Supabase que conecta profesionales con usuarios, incluyendo autenticación segura, sistema de roles (owner/user) y panel de administración de servicios.",
+    image: "./images/consultelo.png",
+    images: [
+      "./images/consultelo.png",
+      "./images/consultelo-2.png",
+      "./images/consultelo-3.png",
+      "./images/consultelo-4.png",
+      "./images/consultelo-5.png",
+    ],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "HTML5",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "Prisma",
+      "Git",
+    ],
+    links: {
+      demo: "https://consultelo.vercel.app/",
+      github: "https://github.com/De1t4/consultelo",
+    },
+  },
   {
     title: "MILITARY APP",
     description:
-      "Es una aplicación diseñada para gestionar diferentes tipos de usuarios en un entorno militar simulado, organizados según su jerarquía y responsabilidades.",
+      "Proyecto fullstack que modela un sistema de gestión con roles jerárquicos complejos. Implementé el frontend con Next.js + TypeScript y el backend con Spring Boot + Java + MySQL, diseñando un sistema de herencia de permisos por jerarquía con 4 niveles diferenciados y API REST documentada.",
     image: "./images/miltaryapp.png",
+    images: [
+      "./images/miltaryapp.png",
+      "./images/miltaryapp-2.jfif",
+      "./images/miltaryapp-3.jfif",
+      "./images/miltaryapp-4.jfif",
+      "./images/miltaryapp-5.jfif",
+    ],
     technologies: [
       "Next.js",
       "TypeScript",
@@ -23,8 +92,13 @@ export const projects = [
   {
     title: "JUSTINA.IO",
     description:
-      "Diseñada para transformar la experiencia en el cuidado de la salud. Nuestra misión es proporcionar soluciones educativas eficientes para pacientes como a médicos, mejorando la comunicación, optimizando procesos y facilitando el acceso a información médica.",
+      "🥈 2.° puesto en Hackathon No Country. En equipo multidisciplinario y tiempo limitado, diseñamos una plataforma de salud digital para mejorar la comunicación médico-paciente. Lideré el frontend con React + TypeScript, integré el backend en Spring Boot y diseñé interfaces accesibles enfocadas en UX para pacientes.",
     image: "./images/justina.png",
+    images: [
+      "./images/justina.jpg",
+      "./images/justina-2.png",
+      "./images/justina-3.png",
+    ],
     technologies: [
       "React.js",
       "TypeScript",
@@ -39,28 +113,11 @@ export const projects = [
     },
   },
   {
-    title: "NEARBYTOUR",
-    description:
-      "NearbyTour es tu puerta de entrada a las joyas ocultas del mundo, esos lugares secretos que solo los lugareños conocen. Descubre tesoros inexplorados, aventuras únicas y la auténtica cultura local con NearbyTour.",
-    image: "/images/nearby.png",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "HTML5",
-      "Tailwind CSS",
-      "Firebase",
-      "Cloudinary",
-    ],
-    links: {
-      demo: "https://nearbytour.vercel.app/home",
-      github: "https://github.com/No-Country/s11-21-react-next",
-    },
-  },
-  {
     title: "DIGITAL CORNER",
     description:
-      "Digital Corner es un blog dinámico que te permite escribir posts sobre tecnologías. Aquí, puedes construir tu comunidad al tener seguidores y seguir a personas que compartan tus intereses.",
+      "Blog fullstack con sistema social de seguidores y feeds personalizados. Frontend en Next.js + TypeScript, backend en Python + FastAPI + MySQL. Integré Cloudinary para gestión de imágenes en la nube y diseñé un sistema de comunidad completo con CRUD de posts y perfiles.",
     image: "./images/blogapp.png",
+    images: ["./images/blogapp.png", "./images/blogapp-2.png"],
     technologies: [
       "Next.js",
       "TypeScript",
@@ -74,26 +131,6 @@ export const projects = [
     links: {
       demo: "https://digital-corner.netlify.app/",
       github: "https://github.com/De1t4/blog-app-frontend",
-    },
-  },
-  {
-    title: "DRINKVENTRY",
-    description:
-      "DrinkVentry es una aplicación para la gestión de inventarios de bebidas. Permite el control de diversas bebidas, clientes, presenta un sistema distintivo de administración con roles específicos para el administrador y el usuario.",
-    image: "./images/drinkventry.png",
-    technologies: [
-      "React.js",
-      "TypeScript",
-      "HTML5",
-      "Tailwind CSS",
-      "Mongo DB",
-      "Node.js",
-      "Express.js",
-    ],
-    links: {
-      demo: "https://drinkventry.netlify.app/",
-      github:
-        "https://github.com/No-Country/s12-23-tn-typescript-react/tree/developer",
     },
   },
 ];
@@ -120,11 +157,11 @@ export const timeline = [
 export const experiences = [
   {
     company: "Primarket",
-    position: "Desarrollador Web",
+    position: "Frontend Lead",
     period: "Jun 2025 - Dic 2025",
     location: "Buenos Aires, Argentina",
     type: "Profesional Independiente",
-    link: "https://primarket.codershub.top/",
+    link: "https://www.linkedin.com/company/primarket/home/",
     technologies: [
       "HTML5",
       "React.js",
@@ -139,15 +176,15 @@ export const experiences = [
       "Scrum",
     ],
     achievements: [
-      "Lideré un equipo técnico de 5 desarrolladores bajo metodología ágiles, optimizando los tiempos de entrega de los sprints en un 30%.",
+      "Colaboré de forma voluntaria liderando el equipo de desarrollo técnico (5 miembros), asumiendo la arquitectura y construcción de los módulos frontend más críticos de la plataforma.",
       "Fomenté la estandarización del código mediante la revisión de más de 100 PRs e implementación de herramientas de calidad, aplicando patrones de diseño y promoviendo buenas prácticas para reducir un 30% los errores de despliegue.",
-      "Refactorización de código heredado (legacy code) hacia arquitecturas limpias y modulares en React, facilitando la escalabilidad del sistema y reduciendo el tiempo de inducción de nuevos desarrolladores.",
+      "Optimicé los flujos de trabajo del equipo, mejorando los tiempos de entrega en un 25% a través de la estandarización de código.",
       "Guiado y apoyo técnico a desarrolladores menos experimentados en la adopción de buenas prácticas de programación y estándares del proyecto.",
     ],
   },
   {
     company: "IcarisTech",
-    position: "Desarrollador Web",
+    position: "Frontend Developer",
     period: "Sep 2024 - Mar 2025",
     link: "https://www.linkedin.com/company/icaristech/",
     location: "Buenos Aires, Argentina",
@@ -173,7 +210,7 @@ export const experiences = [
   },
   {
     company: "No Country",
-    position: "Desarrollador Frontend",
+    position: "Frontend Developer",
     period: "Ene 2024 - Ago 2024",
     location: "Remoto",
     link: "https://nocountry.tech/",
