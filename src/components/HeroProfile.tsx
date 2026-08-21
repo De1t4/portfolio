@@ -10,7 +10,7 @@ export default function HeroProfile() {
   };
   return (
     <>
-      <section className="relative px-4 h-[calc(100dvh-64px)] flex items-center overflow-hidden">
+      <section className="relative px-4 h-[calc(95dvh-64px)] flex items-center overflow-hidden">
         <motion.div
           className="absolute inset-0 -z-10"
           animate={{
@@ -67,7 +67,7 @@ export default function HeroProfile() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              Desarrollador Fullstack con experiencia liderando equipos y
+              Desarrollador Frontend con experiencia liderando equipos y
               construyendo productos reales para clientes{" "}
               {/* <span className="text-gray-300 font-medium">React, Next.js</span> */}
             </motion.p>
@@ -116,7 +116,7 @@ export default function HeroProfile() {
                 <span>Ver CV</span>
               </motion.button>
             </motion.div>
-            <div className="w-full flex justify-center">
+            {/* <div className="w-full flex justify-center mt-4">
               <motion.div
                 className="absolute bottom-8  m-auto flex flex-col items-center gap-2 opacity-0 cursor-pointer pointer-events-auto"
                 initial={{ opacity: 0, y: -10 }}
@@ -146,7 +146,7 @@ export default function HeroProfile() {
                   />
                 </div>
               </motion.div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
