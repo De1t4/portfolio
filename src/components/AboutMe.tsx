@@ -16,19 +16,24 @@ export default function AboutMe() {
       <div className="absolute top-1/4 right-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto max-w-4xl relative z-10">
-        <motion.h2
-          className="font-montserrat font-black text-3xl md:text-4xl text-center mb-12 text-gray-100 tracking-tight"
-          variants={{
-            hidden: { opacity: 0, y: -10 },
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: { duration: 0.8 },
-            },
-          }}
-        >
-          Sobre mí
-        </motion.h2>
+        <div className="text-center mb-16">
+          <p className="font-mono text-xs uppercase tracking-widest text-emerald-400 mb-2">
+            01 / PERFIL
+          </p>
+          <motion.h2
+            className="text-3xl sm:text-5xl font-black text-gray-100 tracking-tight"
+            variants={{
+              hidden: { opacity: 0, y: -10 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.8 },
+              },
+            }}
+          >
+            Sobre <em className="font-serif italic font-normal text-emerald-400">mí.</em>
+          </motion.h2>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>

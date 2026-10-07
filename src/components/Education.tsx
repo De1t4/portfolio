@@ -10,12 +10,17 @@ export default function Education() {
       <div className="absolute top-1/4 left-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 max-w-4xl relative">
-        <h2 className="font-montserrat font-black text-3xl md:text-4xl text-center mb-2 text-gray-100 tracking-tight">
-          Formación Profesional
-        </h2>
-        <p className="text-center text-gray-400 mb-16 max-w-md mx-auto text-sm md:text-base">
-          Mi camino de aprendizaje académico y especialización tecnológica.
-        </p>
+        <div className="text-center mb-16">
+          <p className="font-mono text-xs uppercase tracking-widest text-emerald-400 mb-2">
+            05 / FORMACIÓN
+          </p>
+          <h2 className="text-3xl sm:text-5xl font-black text-gray-100 tracking-tight">
+            Estudios & <em className="font-serif italic font-normal text-emerald-400">certificaciones.</em>
+          </h2>
+          <p className="text-center text-gray-400 mt-3 max-w-md mx-auto text-sm md:text-base font-light">
+            Mi camino de aprendizaje académico, análisis de sistemas y ciencia de datos.
+          </p>
+        </div>
 
         <div className="relative">
           {/* Vertical timeline line */}

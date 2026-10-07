@@ -26,12 +26,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <InteractiveBackground className="fixed inset-0 z-0 pointer-events-none" />
         <div className="relative z-10">
           <Header />
-          <div className="py-12 px-4 max-w-7xl mx-auto">
-            {children}
-          </div>
+          <div className="py-4 px-4 max-w-7xl mx-auto">{children}</div>
           <Footer />
         </div>
       </main>
     </ReactLenis>
-  )
+  );
 }

@@ -11,12 +11,17 @@ export default function Projects() {
         <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          <h2 className="font-montserrat font-black text-3xl md:text-4xl text-center mb-2 text-gray-100 tracking-tight">
-            Proyectos
-          </h2>
-          <p className="text-center text-gray-400 mb-16 max-w-md mx-auto text-sm md:text-base">
-            Una selección de mis trabajos más recientes e iniciativas de código abierto.
+        <div className="text-center mb-16">
+          <p className="font-mono text-xs uppercase tracking-widest text-emerald-400 mb-2">
+            03 / TRABAJOS SELECCIONADOS
           </p>
+          <h2 className="text-3xl sm:text-5xl font-black text-gray-100 tracking-tight">
+            Proyectos <em className="font-serif italic font-normal text-emerald-400">destacados.</em>
+          </h2>
+          <p className="text-center text-gray-400 mt-3 max-w-md mx-auto text-sm md:text-base font-light">
+            Soluciones reales desarrolladas para clientes y productos en producción.
+          </p>
+        </div>
 
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"

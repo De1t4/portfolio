@@ -33,22 +33,22 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-gray-950/95 backdrop-blur supports-[backdrop-filter]:bg-gray-950/60">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <a href="#" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center text-gray-950 font-bold">
+          <a href="#" className="flex items-center space-x-3 group">
+            <div className="w-8 h-8 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-mono font-bold text-xs tracking-tight transition-all duration-700 group-hover:rotate-[360deg] group-hover:bg-emerald-500 group-hover:text-gray-950 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
               MC
             </div>
-            <span className="font-montserrat font-bold text-lg text-gray-100">
+            <span className="font-bold text-sm sm:text-base text-gray-100 group-hover:text-white transition-colors">
               Mauricio Chambi
             </span>
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-300 hover:text-emerald-400 transition-colors"
+                className="text-xs lg:text-sm font-medium text-gray-300 hover:text-emerald-400 px-3.5 py-1.5 rounded-full hover:bg-emerald-500/10 transition-all duration-200"
               >
                 {link.label}
               </a>

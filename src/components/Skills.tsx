@@ -101,12 +101,17 @@ export default function Skills() {
       <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 max-w-4xl relative z-10">
-        <h2 className="font-montserrat font-black text-3xl md:text-4xl text-center mb-2 text-gray-100 tracking-tight">
-          Tech Stack
-        </h2>
-        <p className="text-center text-gray-400 mb-16 max-w-md mx-auto text-sm md:text-base">
-          Las tecnologías y herramientas con las que trabajo día a día.
-        </p>
+        <div className="text-center mb-16">
+          <p className="font-mono text-xs uppercase tracking-widest text-emerald-400 mb-2">
+            02 / HABILIDADES
+          </p>
+          <h2 className="text-3xl sm:text-5xl font-black text-gray-100 tracking-tight">
+            Tech <em className="font-serif italic font-normal text-emerald-400">Stack.</em>
+          </h2>
+          <p className="text-center text-gray-400 mt-3 max-w-md mx-auto text-sm md:text-base font-light">
+            Las tecnologías y herramientas con las que construyo soluciones escalables.
+          </p>
+        </div>
 
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 gap-6"

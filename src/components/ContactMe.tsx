@@ -16,13 +16,17 @@ export default function ContactMe() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto max-w-2xl relative">
-        <h2 className="font-montserrat font-black text-3xl md:text-4xl text-center mb-2 text-gray-100 tracking-tight">
-          Contáctame
-        </h2>
-        <p className="text-center text-gray-400 mb-12 text-sm md:text-base">
-          ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y cómo
-          puedo ayudarte.
-        </p>
+        <div className="text-center mb-12">
+          <p className="font-mono text-xs uppercase tracking-widest text-emerald-400 mb-2">
+            06 / CONEXIÓN
+          </p>
+          <h2 className="text-3xl sm:text-5xl font-black text-gray-100 tracking-tight">
+            Hablemos de <em className="font-serif italic font-normal text-emerald-400">proyectos.</em>
+          </h2>
+          <p className="text-center text-gray-400 mt-3 text-sm md:text-base font-light">
+            ¿Tienes un producto o desafío en mente? Conversemos sobre cómo llevarlo a producción.
+          </p>
+        </div>
         <motion.div
           variants={{
             hidden: { opacity: 0, y: 20 },
