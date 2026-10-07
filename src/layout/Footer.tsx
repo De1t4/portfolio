@@ -47,9 +47,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-gray-500 text-sm">
-            © {year} Mauricio Chambi. Todos los derechos reservados.
-          </p>
+          <p className="text-gray-500 text-sm">© {year} Mauricio Chambi.</p>
         </div>
       </div>
     </footer>
