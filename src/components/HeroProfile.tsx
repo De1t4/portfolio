@@ -71,7 +71,7 @@ export default function HeroProfile() {
             {/* Badge overlay on bottom */}
             <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-gray-900/95 border border-emerald-500/30 text-emerald-400 font-mono text-[10px] tracking-wider uppercase whitespace-nowrap shadow-lg flex items-center gap-1.5 backdrop-blur-md">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-              <span>MC · 2025</span>
+              <span>MC · {new Date().getFullYear()}</span>
             </div>
           </div>
         </motion.div>
