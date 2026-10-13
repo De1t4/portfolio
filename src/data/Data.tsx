@@ -157,7 +157,7 @@ export const timeline = [
 export const experiences = [
   {
     company: "Primarket",
-    position: "Frontend Lead",
+    position: "Frontend Developer",
     period: "Jun 2025 - Dic 2025",
     location: "Buenos Aires, Argentina",
     type: "Profesional Independiente",
@@ -176,10 +176,9 @@ export const experiences = [
       "Scrum",
     ],
     achievements: [
-      "Colaboré de forma voluntaria liderando el equipo de desarrollo técnico (5 miembros), asumiendo la arquitectura y construcción de los módulos frontend más críticos de la plataforma.",
-      "Fomenté la estandarización del código mediante la revisión de más de 100 PRs e implementación de herramientas de calidad, aplicando patrones de diseño y promoviendo buenas prácticas para reducir un 30% los errores de despliegue.",
-      "Optimicé los flujos de trabajo del equipo, mejorando los tiempos de entrega en un 25% a través de la estandarización de código.",
-      "Guiado y apoyo técnico a desarrolladores menos experimentados en la adopción de buenas prácticas de programación y estándares del proyecto.",
+      "Lideré técnicamente de forma voluntaria a un equipo de 5 desarrolladores en la construcción del dashboard de usuario para un e-commerce B2B, coordinando el ciclo de vida del producto mediante reuniones estratégicas con UX/UI, Backend, Testing y DevOps.",
+      "Implementé el patrón Screaming Architecture desde cero para estructurar el proyecto e integré herramientas de validación continua (ESLint, Prettier), garantizando la escalabilidad y mantenibilidad del código base.",
+      "Reduje un 30% los errores en despliegues a producción y aceleré un 25% los tiempos de entrega al estandarizar el proceso de revisiones de código, documentar Pull Requests y estructurar un plan integral de onboarding técnico y pair programming para nuevos ingresos.",
     ],
   },
   {
@@ -202,10 +201,9 @@ export const experiences = [
       "Mercado Pago",
     ],
     achievements: [
-      "Trabajé en equipo para un cliente directo, gestionando la comunicación técnica y negociación de requerimientos para alinear el desarrollo con objetivos de negocio.",
-      "Diseñe componentes críticos e integré pasarela de Mercado Pago, asegurando transacciones seguras mediante un manejo robusto de estados y APIs.",
-      "Implementé interfaces intuitivas optimizadas, asegurando una experiencia de usuario fluida y alineada con la identidad de marca del cliente. ",
-      "Desarrollo y entrega del 100% de los módulos críticos acordados bajo contrato dentro de los plazos estipulados, logrando un índice de satisfacción del cliente excelente.",
+      "Desarrollé el frontend de una aplicación web para centralizar y automatizar la creación de libros personalizados, consumiendo un backend estructurado en Java con Spring Boot mediante APIs REST.",
+      "Aseguré el despliegue del 100% de los módulos en los plazos establecidos utilizando metodologías ágiles, liderando iteraciones constantes y demostraciones de producto con los clientes para validar requerimientos.",
+      "Implementé el flujo de monetización del sistema mediante la integración exitosa de la pasarela de pagos de Mercado Pago, habilitando la adquisición directa del servicio por parte de los usuarios.",
     ],
   },
   {
